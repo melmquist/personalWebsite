@@ -1,0 +1,44 @@
+.box {
+
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+}
+
+.rightBox {
+    width: 200px;
+    height: 200px;
+    background-color: #0CC0FF;
+
+}
+
+/*.box:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+
+}*/
+
+html {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  height: 2000px;
+}
+
+#linkedInLogo {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+#Rectangle{
+  position: absolute;
+}
+
+#Rectangle-3-Copy-2{
+  position: absolute;
+}
