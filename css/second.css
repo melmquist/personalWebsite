@@ -110,3 +110,9 @@ time, mark, audio, video {
   animation-duration: 3s;
   animation-delay: 1s;
 }
+
+#linkedInLogo {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
