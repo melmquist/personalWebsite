@@ -116,3 +116,49 @@ time, mark, audio, video {
   width: 200px;
   height: 200px;
 }
+
+.deskAnimation{
+	position: relative;
+}
+
+
+#deskPng{
+	position: absolute;
+	z-index: 0;
+	height: 400px;
+	width: 400px;
+}
+
+#chairPng{
+	position: absolute;
+	z-index: 10;
+	height: 290px;
+	width: 290px;
+	left: 205px;
+	top: 140px;
+}
+
+#bookPng{
+	position: absolute;
+	z-index: 20;
+	height: 80px;
+  width: 80px;
+  top: 140px;
+  left: 145px;
+}
+#puterPng{
+	position: absolute;
+	z-index: 30;
+	height: 205px;
+	width: 205px;
+	left: 140px;
+	top: 0px;
+}
+#treePng{
+	position: absolute;
+	z-index: 40;
+	height: 130px;
+	width: 140px;
+	left: 50px;
+	top: 25px;
+}
