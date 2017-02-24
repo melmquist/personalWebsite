@@ -25,6 +25,20 @@ $(function(){
 				//--> IDEAS: 1) if it doesn't then animate back? 2)instead of having a specific id to animate, maybe have a class of animateFromLeft or somehting
 				var linkedInLogoId = $('#linkedInLogo') //!!!specifically access a child only when the parent has a class of active
 
+				var deskPng = $('#deskPng');
+
+				var chairPng = $('#chairPng');
+				var bookPng = $('#bookPng');
+				var puterPng = $('#puterPng');
+				var treePng = $('#treePng');
+
+
+				/*
+				desk top
+				chair, left
+				tree right
+				book and puter, down (staggered)
+				*/
 				var classRef = sections[index].attr('class');
 				var activeClassReg = /active-section/
 				if(activeClassReg.test(classRef)){
@@ -32,8 +46,23 @@ $(function(){
 					// console.log("this log shows that the regex looking for active-section has been hit");
 				}
 				if(index === 1){
-					console.log("we are now on the 2nd section!");
-					TweenMax.to(linkedInLogoId, 6, {left:200})
+					TweenMax.set('.deskAnimation', {visibility: "visible"})
+
+					//top
+					TweenMax.from(deskPng, 1, {top:500})
+					//left
+					TweenMax.from(chairPng, 1, {left:500})
+					//right
+					TweenMax.from(treePng, 1, {left:500})
+					//bottom
+					TweenMax.from(bookPng, 1, {left:500})
+					TweenMax.from(puterPng, 1.2, {left:5000})
+
+					/*
+					change to tweenLite
+					start off visibility hidden
+					*/
+
 				}
 
 			},

@@ -119,6 +119,7 @@ time, mark, audio, video {
 
 .deskAnimation{
 	position: relative;
+	visibility: hidden
 }
 
 
@@ -161,4 +162,14 @@ time, mark, audio, video {
 	width: 140px;
 	left: 50px;
 	top: 25px;
+}
+.mainSlideCopy{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 100px;
+
+}
+.secondSlideCopy{
+	font-family: 'Source Code Pro', monospace;
+	font-size: 20px;	
+
 }
