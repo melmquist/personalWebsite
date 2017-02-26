@@ -170,6 +170,37 @@ time, mark, audio, video {
 }
 .secondSlideCopy{
 	font-family: 'Source Code Pro', monospace;
-	font-size: 20px;	
+	font-size: 20px;
+}
 
+.soccerAnimation{
+	position: relative;
+}
+
+#fieldOne{
+	position: absolute;
+	z-index: 10;
+	top: 0px;
+  left: 0px;
+}
+
+#fieldTwo{
+	position: absolute;
+	z-index: 20;
+	top: 0px;
+	left: 0px;
+}
+
+#fieldThree{
+	position: absolute;
+	z-index: 30;
+	top: 0px;
+	left: 0px;
+}
+
+#fieldFour{
+	position: absolute;
+	z-index: 40;
+	top: 0px;
+	left: 0px;
 }
