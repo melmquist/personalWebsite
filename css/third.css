@@ -20,6 +20,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+
 .welcome{
   background-color: #6DD3CE;
   height: 100vh;
@@ -128,7 +129,7 @@ time, mark, audio, video {
 
 .deskAnimation{
 	position: relative;
-	/*visibility: hidden*/
+	visibility: hidden
 }
 
 
@@ -172,6 +173,8 @@ time, mark, audio, video {
 	left: 50px;
 	top: 25px;
 }
+
+
 .mainSlideCopy{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 100px;
@@ -181,6 +184,7 @@ time, mark, audio, video {
 	font-family: 'Source Code Pro', monospace;
 	font-size: 20px;
 }
+
 
 .soccerAnimation{
 	position: relative;

@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-  // $("body").css("overflow", "hidden");
 
   var height = $(window).height()
   $( window ).resize(function() {
@@ -16,11 +15,10 @@ $( document ).ready(function() {
   var myLinksSectionHeight = height * 3.6
 
 
+
+
   $(window).scroll(function() {
-    var scrollPosition = [
-      self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
-      self.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-    ];
+
 
     var pos = $(this).scrollTop();
 
@@ -36,22 +34,38 @@ $( document ).ready(function() {
     if (pos > buildThingsSectionHeight && pos < whatAmISectionHeight){
       console.log("SECTION buildThings");
 
-      var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
-      html.data('scroll-position', scrollPosition);
-      html.data('previous-overflow', html.css('overflow'));
-      html.css('overflow', 'hidden');
-      window.scrollTo(scrollPosition[0], scrollPosition[1]);
-
-      // un-lock scroll position
-      var html = jQuery('html');
-      var scrollPosition = html.data('scroll-position');
-      html.css('overflow', html.data('previous-overflow'));
-      window.scrollTo(scrollPosition[0], scrollPosition[1])
     }
 
     //SECTION whatAmI
     if (pos > whatAmISectionHeight && pos < myWorkSectionHeight){
       console.log("SECTION whatAmI");
+
+      var entireDesk = $('#deskAnimation')
+      var deskPng = $('#deskPng');
+      var chairPng = $('#chairPng');
+      var bookPng = $('#bookPng');
+      var puterPng = $('#puterPng');
+      var treePng = $('#treePng');
+
+      entireDesk.css("visibility", "visible")
+
+      TweenMax.set('.deskAnimation', {visibility: "visible"})
+
+      //top
+      TweenMax.from(deskPng, 1, {top:500})
+      //left
+      TweenMax.from(chairPng, 1, {left:500})
+      //right
+      TweenMax.from(treePng, 1, {left:500})
+      //bottom
+      TweenMax.from(bookPng, 1, {left:500})
+      TweenMax.from(puterPng, 1.2, {left:5000})
+
+
+
+
+
+
     }
 
 
