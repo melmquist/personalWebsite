@@ -6,7 +6,7 @@ $(function(){
 			section: ".section",
 			// sectionName: true,
 			easing: "easeOutExpo",
-      scrollSpeed: 2000,
+      scrollSpeed: 1400,
 			updateHash: true,
 			before: function(index, sections){
 				var dataRef = sections[index].attr('data-section-name');

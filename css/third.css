@@ -20,20 +20,29 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-.firstSection{
-  background-color: #6DD3CE
+.welcome{
+  background-color: #6DD3CE;
+  height: 100vh;
 }
 
-.secondSection{
-  background-color: #F7A278
+.buildThings{
+  background-color: white;
+  height: 100vh
 }
 
-.thirdSection{
-  background-color: #A13D63
+.whatAmI{
+  background-color: #F7A278;
+  height: 100vh;
 }
 
-.fourthSection{
-  background-color: #C1D7AE
+.myWork{
+  background-color: #A13D63;
+  height: 100vh;
+}
+
+.myLinks{
+  background-color: #C1D7AE;
+  height: 100vh;
 }
 
 .fifthSection{
@@ -119,7 +128,7 @@ time, mark, audio, video {
 
 .deskAnimation{
 	position: relative;
-	visibility: hidden
+	/*visibility: hidden*/
 }
 
 
