@@ -26,9 +26,9 @@ time, mark, audio, video {
   height: 100vh;
 }
 
-.buildThings{
+.interstitial{
   background-color: white;
-  height: 100vh
+  height: 50vh
 }
 
 .whatAmI{
@@ -120,6 +120,57 @@ time, mark, audio, video {
   animation-duration: 3s;
   animation-delay: 1s;
 }
+
+
+/*/////////INTERSTITIAL///////////*/
+
+/*.interImage {
+	position: relative
+}
+
+.interImage img {
+	display: block;
+	width: 100%;
+	max-width: 1200px; /* corresponds to max height of 450px
+  margin: 0 auto;
+}
+*/
+
+
+
+.imageContainer {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+}
+.imageCenterer {
+  width: 1000px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -500px;
+}
+.imageCenterer img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #linkedInLogo {
   position: absolute;

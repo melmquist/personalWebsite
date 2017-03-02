@@ -5,86 +5,78 @@ $( document ).ready(function() {
     height = $(window).height()
   });
 
-  console.log("HEIGHT: ", height);
+  // console.log("HEIGHT: ", height);
 
+  var welcomeSectionHeight = height
 
-  // var welcomeSectionHeight = height
-  var buildThingsSectionHeight = height
-  var whatAmISectionHeight = height * 2
-  var myWorkSectionHeight = height * 3
-  var myLinksSectionHeight = height * 3.6
+  var interOneStart = height
+  var interOneEnd = height * 1.5
 
+  var whatAmIStart = height * 1.5
+  var whatAmIEnd = height * 2.5
 
+  var interTwoStart = height * 2.5
+  var interTwoEnd = height * 3
+
+  var myWorkStart = height * 3
+  var myWorkEnd = height * 4
+
+  var interThreeStart = height * 4
+  var interThreeEnd = height * 4.5
+
+  var myLinksStart = height * 4.1
 
 
   $(window).scroll(function() {
-
-
     var pos = $(this).scrollTop();
+    // console.log("position: ", pos);
 
-    console.log("position: ", pos);
-    // console.log("Scroll Position --> ", scrollPosition);
-
-    //SECTION WELCOME
-    if (pos < buildThingsSectionHeight){
-      console.log("SECTION WELCOME");
+    //WELCOME
+    if (pos < interOneStart){
+      console.log("WELCOME");
     }
 
-    //SECTION buildThings
-    if (pos > buildThingsSectionHeight && pos < whatAmISectionHeight){
-      console.log("SECTION buildThings");
-
-    }
-
-    //SECTION whatAmI
-    if (pos > whatAmISectionHeight && pos < myWorkSectionHeight){
-      console.log("SECTION whatAmI");
-
-      var entireDesk = $('#deskAnimation')
-      var deskPng = $('#deskPng');
-      var chairPng = $('#chairPng');
-      var bookPng = $('#bookPng');
-      var puterPng = $('#puterPng');
-      var treePng = $('#treePng');
-
-      entireDesk.css("visibility", "visible")
-
-      TweenMax.set('.deskAnimation', {visibility: "visible"})
-
-      //top
-      TweenMax.from(deskPng, 1, {top:500})
-      //left
-      TweenMax.from(chairPng, 1, {left:500})
-      //right
-      TweenMax.from(treePng, 1, {left:500})
-      //bottom
-      TweenMax.from(bookPng, 1, {left:500})
-      TweenMax.from(puterPng, 1.2, {left:5000})
-
-
-
-
-
+    //interOne
+    if (pos > interOneStart && pos < interOneEnd){
+      console.log("interOne");
 
     }
 
+    //whatAmI
+    if (pos > whatAmIStart && pos < whatAmIEnd){
+      console.log("whatAmI");
 
-    //SECTION myWork
-    if (pos > myWorkSectionHeight && pos < myLinksSectionHeight){
-      console.log("SECTION myWork");
+      // var entireDesk = $('#deskAnimation')
+      // var deskPng = $('#deskPng');
+      // var chairPng = $('#chairPng');
+      // var bookPng = $('#bookPng');
+      // var puterPng = $('#puterPng');
+      // var treePng = $('#treePng');
+      //
+      // entireDesk.css("visibility", "visible")
+
     }
 
+    //interTwo
+    if (pos > interTwoStart && pos < interTwoEnd){
+      console.log("interTwo");
 
-    // SECTION myLinks
-    if (pos > myLinksSectionHeight){
-      console.log("SECTION myLinks");
     }
 
+    //myWork
+    if (pos > myWorkStart && pos < myWorkEnd){
+      console.log("myWork");
+    }
 
+    //interThree
+    if (pos > interThreeStart && pos < interThreeEnd){
+      console.log("interThree");
 
-
-
-
+    }
+    //myLinks
+    if (pos > myLinksStart){
+      console.log("myLinks");
+    }
 
   })
 
