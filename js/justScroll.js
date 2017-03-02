@@ -28,8 +28,17 @@ $( document ).ready(function() {
 
 
   $(window).scroll(function() {
+
     var pos = $(this).scrollTop();
-    // console.log("position: ", pos);
+    var changeRate = Math.ceil(pos/5)
+
+    console.log("position: ", pos);
+    console.log("changeRate: ", changeRate);
+
+    var backImage = $('.imageCenterer');
+    // var newTop = backImage.position().top + changeRate
+    backImage.css('top', -changeRate + 'px')
+
 
     //WELCOME
     if (pos < interOneStart){
@@ -38,22 +47,21 @@ $( document ).ready(function() {
 
     //interOne
     if (pos > interOneStart && pos < interOneEnd){
-      console.log("interOne");
-
+      // console.log("interOne");
     }
 
     //whatAmI
     if (pos > whatAmIStart && pos < whatAmIEnd){
       console.log("whatAmI");
 
-      // var entireDesk = $('#deskAnimation')
+      var entireDesk = $('#deskAnimation')
       // var deskPng = $('#deskPng');
       // var chairPng = $('#chairPng');
       // var bookPng = $('#bookPng');
       // var puterPng = $('#puterPng');
       // var treePng = $('#treePng');
       //
-      // entireDesk.css("visibility", "visible")
+      entireDesk.css("visibility", "visible")
 
     }
 
