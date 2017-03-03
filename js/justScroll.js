@@ -33,10 +33,9 @@ $( document ).ready(function() {
     var changeRate = Math.ceil(pos/5)
 
     console.log("position: ", pos);
-    console.log("changeRate: ", changeRate);
+    // console.log("changeRate: ", changeRate);
 
     var backImage = $('.imageCenterer');
-    // var newTop = backImage.position().top + changeRate
     backImage.css('top', -changeRate + 'px')
 
 
@@ -54,8 +53,8 @@ $( document ).ready(function() {
     if (pos > whatAmIStart && pos < whatAmIEnd){
       console.log("whatAmI");
 
-      var entireDesk = $('#deskAnimation')
-      entireDesk.css("visibility", "visible")
+      // var entireDesk = $('#deskAnimation')
+      // entireDesk.css("visibility", "visible")
 
       var deskPng = $('#deskPng');
       var chairPng = $('#chairPng');
@@ -63,25 +62,63 @@ $( document ).ready(function() {
       var puterPng = $('#puterPng');
       var treePng = $('#treePng');
 
+      var dopeSauce = $('#dopeSauce');
+      var dopeSauceCursor = $('#dopeSauceCursor');
+
       TweenMax.to(deskPng, 1, {left: '0px', top: '0px'})
       TweenMax.to(chairPng, 1.5, {left: '205px', top: '140px'})
       TweenMax.to(bookPng, 1.1, {left: '145px'})
       TweenMax.to(treePng, 1.3, {left: '50px'})
       TweenMax.to(puterPng, 1.6, {top: '0px'})
 
+      //CHANGE COLOR ITS TOO HARD TO LOOK AT FUCK...
+      // setTimeout(() =>{
+      //   dopeSauce.css("visibility", "visible")
+      //   dopeSauce.addClass("animated bounceIn");
+      //
+      //   dopeSauceCursor.css("visibility", "visible")
+      //   dopeSauceCursor.addClass("animated flash infinite");
+      // }, 2000);
 
     }
 
     //interTwo
     if (pos > interTwoStart && pos < interTwoEnd){
       console.log("interTwo");
-
     }
+
 
     //myWork
     if (pos > myWorkStart && pos < myWorkEnd){
       console.log("myWork");
+
+      $(".myWorkParent").sticky({topSpacing:0});
+
+      //
+      // var rotateDegrees = "rotate(" + top/10 + "deg)";
+      // // console.log("rotateDegrees: ", rotateDegrees);
+      // $bat.css('transform', rotateDegrees);
+      //
+      // // var pushDown = "translateY(" + top + ")"
+      // $box.css('transform', 'scale(' + top/50 + ')');
+      // $boxRight.css('transform', 'translateX(' + top + 'px)');
+
+
+      var moveOver = "translateX(" + pos/10 + "px)"
+      var soccerAnimation = $('.soccerAnimation');
+      soccerAnimation.css('transform', moveOver);
+
+
+    } else {
+      $(".myWorkParent").unstick()
     }
+
+
+
+
+
+
+
 
     //interThree
     if (pos > interThreeStart && pos < interThreeEnd){

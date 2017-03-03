@@ -36,10 +36,23 @@ time, mark, audio, video {
   height: 100vh;
 }
 
+
+
+.myWorkParent{
+	position: relative;
+	z-index: 100
+}
+
 .myWork{
   background-color: #A13D63;
   height: 100vh;
 }
+
+
+
+
+
+
 
 .myLinks{
   background-color: #C1D7AE;
@@ -223,7 +236,24 @@ time, mark, audio, video {
 	/*left: 50px;
 	top: 25px;*/
 }
-
+#dopeSauce{
+	position: absolute;
+	z-index: 50;
+	height: 80px;
+  width: 80px;
+  left: 190px;
+  top: 54px;
+	visibility: hidden;
+}
+#dopeSauceCursor{
+	position: absolute;
+	z-index: 60;
+	height: 80px;
+	width: 80px;
+	left: 190px;
+	top: 54px;
+	visibility: hidden;
+}
 
 .mainSlideCopy{
 	font-family: 'Josefin Sans', sans-serif;
