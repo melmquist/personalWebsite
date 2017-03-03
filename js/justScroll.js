@@ -55,13 +55,20 @@ $( document ).ready(function() {
       console.log("whatAmI");
 
       var entireDesk = $('#deskAnimation')
-      // var deskPng = $('#deskPng');
-      // var chairPng = $('#chairPng');
-      // var bookPng = $('#bookPng');
-      // var puterPng = $('#puterPng');
-      // var treePng = $('#treePng');
-      //
       entireDesk.css("visibility", "visible")
+
+      var deskPng = $('#deskPng');
+      var chairPng = $('#chairPng');
+      var bookPng = $('#bookPng');
+      var puterPng = $('#puterPng');
+      var treePng = $('#treePng');
+
+      TweenMax.to(deskPng, 1, {left: '0px', top: '0px'})
+      TweenMax.to(chairPng, 1.5, {left: '205px', top: '140px'})
+      TweenMax.to(bookPng, 1.1, {left: '145px'})
+      TweenMax.to(treePng, 1.3, {left: '50px'})
+      TweenMax.to(puterPng, 1.6, {top: '0px'})
+
 
     }
 

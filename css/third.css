@@ -164,29 +164,13 @@ time, mark, audio, video {
 
 
 
+/*///////////////////DESK ANIMATION///////////////////*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-#linkedInLogo {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-}
 
 .deskAnimation{
 	position: relative;
-	visibility: hidden
+	/*visibility: hidden*/
 }
 
 
@@ -195,6 +179,8 @@ time, mark, audio, video {
 	z-index: 0;
 	height: 400px;
 	width: 400px;
+	left: 1000px;
+	top: 1000px;
 }
 
 #chairPng{
@@ -202,8 +188,9 @@ time, mark, audio, video {
 	z-index: 10;
 	height: 290px;
 	width: 290px;
-	left: 205px;
-	top: 140px;
+	left: -1000px;
+	/*left: 205px;
+	top: 140px;*/
 }
 
 #bookPng{
@@ -211,8 +198,10 @@ time, mark, audio, video {
 	z-index: 20;
 	height: 80px;
   width: 80px;
-  top: 140px;
-  left: 145px;
+  left: 2000px;
+	top: 140px;
+  /*left: 145px;
+	top: 140px;*/
 }
 #puterPng{
 	position: absolute;
@@ -220,15 +209,19 @@ time, mark, audio, video {
 	height: 205px;
 	width: 205px;
 	left: 140px;
-	top: 0px;
+	top: -3000px;
+	/*left: 140px;
+	top: 0px;*/
 }
 #treePng{
 	position: absolute;
 	z-index: 40;
 	height: 130px;
 	width: 140px;
-	left: 50px;
+	left: 2000px;
 	top: 25px;
+	/*left: 50px;
+	top: 25px;*/
 }
 
 
