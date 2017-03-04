@@ -115,7 +115,8 @@ $( document ).ready(function() {
 
 
 
-
+//YO TBHESE ACTUALLY DOPE
+//https://www.sitepoint.com/scroll-based-animations-jquery-css3/
 
 
 

@@ -299,6 +299,20 @@ time, mark, audio, video {
 }
 
 
+/*//////////INTERSTITIAL 3 FULLSTACK//////////*/
+
+
+/*.imageCentererFS {
+  width: 100%;
+  position: absolute;
+	bottom: 50%;
+  top: 0px;
+	margin-top: 120px;
+}*/
+
+
+/*//////////HERE ARE MY LINKS//////////*/
+
 .mtnAnimation{
 	position: relative;
 }
