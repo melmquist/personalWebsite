@@ -92,26 +92,18 @@ $( document ).ready(function() {
     if (pos > myWorkStart && pos < myWorkEnd){
       console.log("myWork");
 
-      $(".myWorkParent").sticky({topSpacing:0});
-
-      //
-      // var rotateDegrees = "rotate(" + top/10 + "deg)";
-      // // console.log("rotateDegrees: ", rotateDegrees);
-      // $bat.css('transform', rotateDegrees);
-      //
-      // // var pushDown = "translateY(" + top + ")"
-      // $box.css('transform', 'scale(' + top/50 + ')');
-      // $boxRight.css('transform', 'translateX(' + top + 'px)');
-
+      // $(".myWorkParent").sticky({topSpacing:0});
 
       var moveOver = "translateX(" + pos/10 + "px)"
       var soccerAnimation = $('.soccerAnimation');
       soccerAnimation.css('transform', moveOver);
 
 
-    } else {
-      $(".myWorkParent").unstick()
     }
+    //TODO RE-IMPLEMENT THIS STICKY?????
+    // else {
+    //   $(".myWorkParent").unstick()
+    // }
 
 
 
