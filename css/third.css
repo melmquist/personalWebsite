@@ -318,42 +318,43 @@ time, mark, audio, video {
 
 .mtnAnimation{
 	position: relative;
-	z-index: 10
-}
+	/*z-index: 10*/
+	width:100%;
+    height: 100%;
 
-.mtnAnimation img{
-	width: 100%;
-	height: 100%;
 }
 
 #mtnWaterFront{
 	position: absolute;;
 	z-index: 20;
-	top: 0px;
-	left: 0px;
+	width:100%;
+    height: 100%;
+
 }
 
 #mtnGround{
 	position: absolute;;
 	z-index: 30;
-	top: 0px;
-	left: 0px;
+	width:100%;
+    height: 100%;
+
 }
 #mtnMtn{
 	position: absolute;;
 	z-index: 40;
-	top: 0px;
-	left: 0px;
+	width:100%;
+    height: 100%;
+
 }
 #mtnClouds{
 	position: absolute;;
 	z-index: 50;
-	top: 0px;
-	left: 0px;
+	width:100%;
+	    height: 100%;
 }
 #mtnMoon{
 	position: absolute;;
 	z-index: 60;
-	top: 0px;
-	left: 0px;
+	width:100%;
+	    height: 100%;
 }
