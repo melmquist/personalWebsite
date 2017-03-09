@@ -167,6 +167,14 @@ time, mark, audio, video {
 	padding: 20px;
 }
 
+.interTextBig.left{
+	left: 35%;
+}
+
+.interTextBig.right{
+	left: 85%;
+}
+
 .interTextBig h1 {
 	color: white;
 	font-family: 'Titillium Web', sans-serif;

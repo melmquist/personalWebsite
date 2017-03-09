@@ -33,7 +33,7 @@ $( document ).ready(function() {
     console.log("position: ", pos);
     // console.log("changeRate: ", changeRate);
 
-    var backImage = $('.imageCenterer');
+    var backImage = $('.imageCenterer.first');
     backImage.css('top', -changeRate + 'px')
 
 
@@ -51,8 +51,14 @@ $( document ).ready(function() {
     if (pos > whatAmIStart && pos < whatAmIEnd){
       console.log("whatAmI");
 
-      // var entireDesk = $('#deskAnimation')
-      // entireDesk.css("visibility", "visible")
+
+      var whatAmIPosDif = pos - whatAmIStart;
+
+      var secondBackImage = $('.imageCenterer.second');
+      var secondChangeRate = Math.ceil(whatAmIPosDif/5)
+      secondBackImage.css('top', -secondChangeRate + 'px')
+
+
 
       var deskPng = $('#deskPng');
       var chairPng = $('#chairPng');
