@@ -5,8 +5,6 @@ $( document ).ready(function() {
     height = $(window).height()
   });
 
-  // console.log("HEIGHT: ", height);
-
   var welcomeSectionHeight = height
 
   var interOneStart = height
@@ -116,8 +114,12 @@ $( document ).ready(function() {
     //interThree
     if (pos > interThreeStart && pos < interThreeEnd){
       console.log("interThree");
-
     }
+
+
+
+
+
     //myLinks
     if (pos > myLinksStart){
       console.log("myLinks");
@@ -125,4 +127,46 @@ $( document ).ready(function() {
 
   })
 
+  var screenWidth = $(window).width();
+  // console.log("screenWidth: ", screenWidth);
+  // console.log("SC HEIGHT", height);
+
+  var slides = $(".slide");
+  var currentSlide = 0;
+
+  TweenMax.set(slides.filter(":gt(0)"), {left: "-" + screenWidth + "px"});
+  TweenMax.delayedCall(4, nextSlide);
+
+  function nextSlide(){
+    TweenMax.to(slides.eq(currentSlide), 1, {left: "-" + screenWidth + "px"})
+    if (currentSlide < slides.length - 1) {
+      currentSlide++;
+    } else {
+      currentSlide = 0;
+    }
+
+    TweenMax.fromTo(slides.eq(currentSlide), 1, {left: screenWidth + "px"}, {left: "0px"} );
+    TweenMax.delayedCall(4, nextSlide)
+  }
+
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

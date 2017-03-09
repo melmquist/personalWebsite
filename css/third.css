@@ -323,7 +323,7 @@ time, mark, audio, video {
 }
 
 
-/*//////////INTERSTITIAL 3 FULLSTACK//////////*/
+/*//////////INTERSTITIAL 2 FULLSTACK//////////*/
 
 
 /*.imageCentererFS {
@@ -333,6 +333,26 @@ time, mark, audio, video {
   top: 0px;
 	margin-top: 120px;
 }*/
+
+/*//////////INTERSTITIAL 3 INTEREST SLIDER //////////*/
+
+.slideContainer {
+	position: relative;
+	width: 100vw;
+	height: 50vh;
+	overflow: hidden;
+	margin: 100px auto 0px;
+}
+
+.slide {
+	position: absolute;
+	width: 100vw;
+	height: 50vh;
+	top: 0px;
+	left: 0px;
+	font-size: 100px;
+	text-align: center;
+}
 
 
 /*//////////HERE ARE MY LINKS//////////*/
