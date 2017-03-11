@@ -224,8 +224,8 @@ time, mark, audio, video {
 #deskPng{
 	position: absolute;
 	z-index: 0;
-	height: 400px;
-	width: 400px;
+	height: 480px;
+	width: 480px;
 	left: 1000px;
 	top: 1000px;
 }
@@ -233,8 +233,8 @@ time, mark, audio, video {
 #chairPng{
 	position: absolute;
 	z-index: 10;
-	height: 290px;
-	width: 290px;
+	height: 348px;
+	width: 348px;
 	left: -1000px;
 	/*left: 205px;
 	top: 140px;*/
@@ -243,8 +243,8 @@ time, mark, audio, video {
 #bookPng{
 	position: absolute;
 	z-index: 20;
-	height: 80px;
-  width: 80px;
+	height: 96px;
+  width: 96px;
   left: 2000px;
 	top: 140px;
   /*left: 145px;
@@ -253,8 +253,8 @@ time, mark, audio, video {
 #puterPng{
 	position: absolute;
 	z-index: 30;
-	height: 205px;
-	width: 205px;
+	height: 246px;
+	width: 246px;
 	left: 140px;
 	top: -3000px;
 	/*left: 140px;
@@ -263,8 +263,8 @@ time, mark, audio, video {
 #treePng{
 	position: absolute;
 	z-index: 40;
-	height: 130px;
-	width: 140px;
+	height: 156px;
+	width: 156px;
 	left: 2000px;
 	top: 25px;
 	/*left: 50px;
@@ -273,19 +273,19 @@ time, mark, audio, video {
 #dopeSauce{
 	position: absolute;
 	z-index: 50;
-	height: 80px;
-  width: 80px;
-  left: 190px;
-  top: 54px;
+	height: 104px;
+  width: 104px;
+	left: 178px;
+  top: 66px;
 	visibility: hidden;
 }
 #dopeSauceCursor{
 	position: absolute;
 	z-index: 60;
-	height: 80px;
-	width: 80px;
-	left: 190px;
-	top: 54px;
+	height: 100px;
+	width: 100px;
+	left: 180px;
+	top: 69px;
 	visibility: hidden;
 }
 
@@ -349,9 +349,10 @@ time, mark, audio, video {
 .slideContainer {
 	position: relative;
 	width: 100vw;
-	height: 50vh;
+	height: 100vh;
 	overflow: hidden;
-	margin: 100px auto 0px;
+	margin: 0px auto 0px;
+	top: -140px;
 }
 
 .slide {
@@ -368,7 +369,7 @@ time, mark, audio, video {
 	position: absolute;
 	z-index: 10;
 	background-color: rgba(0, 0, 0, 0.5);
-	top: 10%;
+	top: 25%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
@@ -385,47 +386,55 @@ time, mark, audio, video {
 /*//////////HERE ARE MY LINKS//////////*/
 
 /*BG COLOR --> 2965AC*/
-
+.myLinks {
+	height: 100vh;
+  overflow: hidden;
+}
 
 .mtnAnimation{
 	position: relative;
 	/*z-index: 10*/
 	width:100%;
-    height: 100%;
-
+  height: 100%;
 }
 
 #mtnWaterFront{
 	position: absolute;;
-	z-index: 20;
+	z-index: 41;
 	width:100%;
-    height: 100%;
-
+  height: 100%;
 }
 
 #mtnGround{
 	position: absolute;;
-	z-index: 30;
+	z-index: 45;
 	width:100%;
-    height: 100%;
-
+  height: 100%;
 }
 #mtnMtn{
 	position: absolute;;
 	z-index: 40;
 	width:100%;
-    height: 100%;
-
+  height: 100%;
 }
 #mtnClouds{
 	position: absolute;;
 	z-index: 50;
 	width:100%;
-	    height: 100%;
+  height: 100%;
 }
 #mtnMoon{
 	position: absolute;;
 	z-index: 60;
-	width:100%;
-	    height: 100%;
+	width: auto;
+  max-width: 100vw;
+  height: auto;
+  max-height: 100vh;
+}
+
+
+
+
+
+
 }
