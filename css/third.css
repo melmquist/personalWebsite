@@ -31,12 +31,6 @@ time, mark, audio, video {
   height: 50vh
 }
 
-.whatAmI{
-  background-color: #F7A278;
-  height: 100vh;
-	overflow: hidden;
-}
-
 
 
 .myWorkParent{
@@ -129,12 +123,12 @@ time, mark, audio, video {
   font-size: 1.5em;
   color: white;
 
-  -webkit-animation-duration: 3s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation-duration: 3s; /* Firefox < 16 */
-  -ms-animation-duration: 3s; /* Internet Explorer */
-  -o-animation-duration: 3s; /* Opera < 12.1 */
-  animation-duration: 3s;
-  animation-delay: 1s;
+  -webkit-animation-duration: 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation-duration: 2s; /* Firefox < 16 */
+  -ms-animation-duration: 2s; /* Internet Explorer */
+  -o-animation-duration: 2s; /* Opera < 12.1 */
+  animation-duration: 2s;
+  animation-delay: 0.5s;
 }
 
 
@@ -211,9 +205,23 @@ time, mark, audio, video {
 
 
 
+/*///////////////////whatAmI///////////////////*/
+
+.whatAmI {
+	background-color: #F7A278;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.popUpCopy {
+	position: absolute;
+	left: 55%;
+	visibility: hidden;
+}
+
+
 /*///////////////////DESK ANIMATION///////////////////*/
-
-
 
 .deskAnimation{
 	position: relative;

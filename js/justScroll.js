@@ -39,7 +39,7 @@ $( document ).ready(function() {
 
 
 
-//start them all off  screen
+  //start LAST MTN ANIMATION them all off  screen
 
   var mtnWaterFront = $('#mtnWaterFront');
   var mtnGround = $('#mtnGround');
@@ -52,15 +52,6 @@ $( document ).ready(function() {
   mtnGround.css('left', width + "px");
   mtnMtn.css('left', -width + "px");
   mtnClouds.css('top', -height + "px");
-
-
-
-
-
-
-
-
-
 
 
 
@@ -98,7 +89,9 @@ $( document ).ready(function() {
       var secondChangeRate = Math.ceil(whatAmIPosDif/5)
       secondBackImage.css('top', -secondChangeRate + 'px')
 
-
+      var popUpCopy = $('.popUpCopy');
+      popUpCopy.css("visibility", "visible")
+      popUpCopy.addClass('animated flipInY')
 
       var deskPng = $('#deskPng');
       var chairPng = $('#chairPng');
