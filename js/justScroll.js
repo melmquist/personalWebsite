@@ -167,7 +167,7 @@ $( document ).ready(function() {
 
       TweenMax.to(mtnWaterFront, 1.6, {left: '0px', top: '0px'})
       TweenMax.to(mtnGround, 2.1, {left: '0px', top: '0px'})
-      TweenMax.to(mtnMtn, 1, {left: '0px', top: '0px'})
+      TweenMax.to(mtnMtn, 2.0, {left: '0px', top: '0px'})
       TweenMax.to(mtnClouds, 1.3, {left: '0px', top: '0px'})
 
 

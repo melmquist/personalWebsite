@@ -218,6 +218,7 @@ time, mark, audio, video {
 	position: absolute;
 	left: 55%;
 	visibility: hidden;
+	animation-delay: 1s;
 }
 
 
