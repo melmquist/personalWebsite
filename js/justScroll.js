@@ -134,7 +134,7 @@ $( document ).ready(function() {
 
       var moveOver = "translateX(" + pos/10 + "px)"
       var soccerAnimation = $('.soccerAnimation');
-      soccerAnimation.css('transform', moveOver);
+      // soccerAnimation.css('transform', moveOver);
 
 
     }

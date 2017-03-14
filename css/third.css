@@ -35,14 +35,14 @@ time, mark, audio, video {
 
 .myWorkParent{
 	position: relative;
-	z-index: 100
+	z-index: 100;
+	overflow: hidden;
 }
 
 .myWork{
   background-color: #A13D63;
   height: 100vh;
 	overflow: hidden;
-
 }
 
 
@@ -216,7 +216,7 @@ time, mark, audio, video {
 
 .popUpCopy {
 	position: absolute;
-	left: 55%;
+	left: 50%;
 	visibility: hidden;
 	animation-delay: 1s;
 }
@@ -310,35 +310,37 @@ time, mark, audio, video {
 
 
 .soccerAnimation{
-	position: relative;
+	top: -25%;
+	left: 48%;
+	position: absolute;
 }
 
 #fieldOne{
 	position: absolute;
 	z-index: 10;
-	top: 0px;
-  left: 0px;
+	height: 1100px;
+	width: 1100px;
 }
 
 #fieldTwo{
 	position: absolute;
 	z-index: 20;
-	top: 0px;
-	left: 0px;
+	height: 1100px;
+	width: 1100px;
 }
 
 #fieldThree{
 	position: absolute;
 	z-index: 30;
-	top: 0px;
-	left: 0px;
+	height: 1100px;
+	width: 1100px;
 }
 
 #fieldFour{
 	position: absolute;
 	z-index: 40;
-	top: 0px;
-	left: 0px;
+	height: 1100px;
+	width: 1100px;
 }
 
 
