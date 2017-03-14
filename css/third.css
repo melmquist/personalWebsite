@@ -164,6 +164,9 @@ time, mark, audio, video {
 .interTextBig.left{
 	left: 35%;
 }
+.interTextBig.left img{
+	/*left: 35%;*/
+}
 
 .interTextBig.right{
 	left: 85%;
