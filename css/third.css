@@ -230,19 +230,41 @@ time, mark, audio, video {
 
 .popUpCopy {
 	position: absolute;
-	left: 50%;
 	visibility: hidden;
 	animation-delay: 1s;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 0.15em 2em 0em;
 }
+
 .popUpCopy img{
-	height: 10em;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popUpCopy .row:nth-of-type(1) img{
+	height: 7em;
+	margin-top: 20px;
+}
+
+.popUpCopy .row:nth-of-type(2) img{
+	height: 5em;
+	margin: 17px;
+}
+.popUpCopy .row:nth-of-type(3) img{
+	height: 7em;
+	margin-top: 7px;
+}
+.popUpCopy .row:nth-of-type(4) img{
+	height: 12em;
+
 }
 
 /*///////////////////DESK ANIMATION///////////////////*/
 
 .deskAnimation{
 	position: relative;
-	/*visibility: hidden*/
+	top: -70px;
 }
 
 
@@ -317,59 +339,84 @@ time, mark, audio, video {
 .mainSlideCopy{
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 100px;
-
+	margin-top: 30px;
+  line-height: 0.8em;
 }
+
 .secondSlideCopy{
 	font-family: 'Source Code Pro', monospace;
 	font-size: 20px;
+	text-align: center;
 }
 
 
+
+/*//////////MY WORK//////////*/
+
+.myWork .mainSlideCopy {
+
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 80px;
+	line-height: 1em;
+
+}
+
 .soccerAnimation{
-	top: -25%;
-	left: 48%;
+	top: -160px;
+	left: -150px;
 	position: absolute;
 }
 
 #fieldOne{
 	position: absolute;
 	z-index: 10;
-	height: 1100px;
-	width: 1100px;
+	height: 990px;
+	width: 990px;
 }
 
 #fieldTwo{
 	position: absolute;
 	z-index: 20;
-	height: 1100px;
-	width: 1100px;
+	height: 990px;
+	width: 990px;
 }
 
 #fieldThree{
 	position: absolute;
 	z-index: 30;
-	height: 1100px;
-	width: 1100px;
+	height: 990px;
+	width: 990px;
 }
 
 #fieldFour{
 	position: absolute;
 	z-index: 40;
-	height: 1100px;
-	width: 1100px;
+	height: 990px;
+	width: 990px;
+}
+
+.wejayLink {
+	background-color: rgba(0, 0, 0, 0.2);
+
+}
+.wejayVid {
+	background-color: rgba(0, 0, 0, 0.2);
+
+}
+.techTalkVid {
+	background-color: rgba(0, 0, 0, 0.2);
+
 }
 
 
-/*//////////INTERSTITIAL 2 FULLSTACK//////////*/
 
 
-/*.imageCentererFS {
-  width: 100%;
-  position: absolute;
-	bottom: 50%;
-  top: 0px;
-	margin-top: 120px;
-}*/
+
+
+
+
+
+
 
 /*//////////INTERSTITIAL 3 INTEREST SLIDER //////////*/
 
