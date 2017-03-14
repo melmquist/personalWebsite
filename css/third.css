@@ -396,15 +396,20 @@ time, mark, audio, video {
 }
 
 .wejayLink {
-	background-color: rgba(0, 0, 0, 0.2);
-
+	/*background-color: rgba(0, 0, 0, 0.2);*/
+	/*margin: 20px;*/
 }
+
+.wejayLink img{
+	width: 400px;
+}
+
 .wejayVid {
-	background-color: rgba(0, 0, 0, 0.2);
+	/*background-color: rgba(0, 0, 0, 0.2);*/
 
 }
 .techTalkVid {
-	background-color: rgba(0, 0, 0, 0.2);
+	/*background-color: rgba(0, 0, 0, 0.2);*/
 
 }
 
