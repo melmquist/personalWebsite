@@ -161,6 +161,17 @@ time, mark, audio, video {
 	padding: 20px;
 }
 
+.fullstackLogo {
+	position: absolute;
+	z-index: 10;
+	left: 65%;
+	top: 24%;
+}
+
+.fullstackLogo img{
+	height: 15em;
+}
+
 .interTextBig.left{
 	left: 35%;
 }
@@ -223,7 +234,9 @@ time, mark, audio, video {
 	visibility: hidden;
 	animation-delay: 1s;
 }
-
+.popUpCopy img{
+	height: 10em;
+}
 
 /*///////////////////DESK ANIMATION///////////////////*/
 
