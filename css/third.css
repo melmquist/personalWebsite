@@ -120,7 +120,7 @@ time, mark, audio, video {
 .instructScrollText{
   font-family: 'Titillium Web', sans-serif;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
   color: white;
 
   -webkit-animation-duration: 2s; /* Safari, Chrome and Opera > 12.1 */
