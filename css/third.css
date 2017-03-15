@@ -396,26 +396,80 @@ time, mark, audio, video {
 }
 
 .wejayLink {
-	/*background-color: rgba(0, 0, 0, 0.2);*/
-	/*margin: 20px;*/
+	background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+	border-radius: 10px;
 }
 
-.wejayLink img{
-	width: 400px;
+.wejayLink #logo{
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 10px;
 }
+
+.wejayLinkText {
+	color: #cccccc;
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 1.2em;
+}
+
+.wejayLinkLinks {
+	color: #cccccc;
+	text-align: center;
+}
+
+.herokuLogo {
+	width: 50px;
+	display: block;
+	margin: 0 auto;
+}
+.githubLogo {
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+}
+
+
+.videoText {
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif, italic;
+	font-size: 1.3em;
+	color: #cccccc;
+}
+
 
 .wejayVid {
 	/*background-color: rgba(0, 0, 0, 0.2);*/
-
+	background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+	border-radius: 10px;
+	z-index: 100;
 }
+
+.wejayVid p {
+	/*display: inline;*/
+	background-color: red
+}
+.wejayVid iframe {
+	/*display: inline;*/
+}
+
+
 .techTalkVid {
 	/*background-color: rgba(0, 0, 0, 0.2);*/
-
+	background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+	border-radius: 10px;
 }
 
-
-
-
+.techTalkVid p {
+	/*display: inline;*/
+}
+.techTalkVid iframe {
+	/*display: inline;*/
+}
 
 
 
