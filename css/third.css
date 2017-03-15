@@ -568,7 +568,55 @@ time, mark, audio, video {
 .myLinks {
 	height: 100vh;
   overflow: hidden;
+	position: relative;
+
 }
+
+
+/*position: absolute;
+z-index: 10;
+background-color: rgba(0, 0, 0, 0.5);
+top: 25%;
+text-align: center;
+padding: 20px;*/
+
+.linksDiv {
+	position: absolute;
+	z-index: 70;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 15px;
+	left: 10%;
+	right: 10%;
+	text-align: center;
+}
+
+.linksDiv img {
+	display: inline-block;
+}
+
+.linksDiv img:nth-of-type(1) {
+	height: 125px;
+	margin: 20px;
+}
+.linksDiv img:nth-of-type(2) {
+	height: 125px;
+	margin: 20px;
+}
+.linksDiv img:nth-of-type(3) {
+	height: 125px;
+	margin: 20px;
+}
+.linksDiv img:nth-of-type(4) {
+	height: 140px;
+	margin: 10px;
+}
+.linksDiv img:nth-of-type(5) {
+	height: 125px;
+	margin: 20px;
+}
+
+
+
 
 .mtnAnimation{
 	position: relative;

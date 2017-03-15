@@ -47,12 +47,15 @@ $( document ).ready(function() {
   var mtnClouds = $('#mtnClouds');
   var mtnMoon = $('#mtnMoon');
 
+  var linksDiv = $('.linksDiv');
+
   //bottom, right, left, top initially positioned png later to be tweened in
   mtnWaterFront.css('top', height + "px");
   mtnGround.css('left', width + "px");
   mtnMtn.css('left', -width + "px");
   mtnClouds.css('top', -height + "px");
 
+  linksDiv.css('top', height + "px");
 
 
 
@@ -164,11 +167,12 @@ $( document ).ready(function() {
     if (pos > myLinksStart + 200){
       console.log("myLinks");
 
-
+      TweenMax.to(linksDiv, 1.6, {top: '450px'})
       TweenMax.to(mtnWaterFront, 1.6, {left: '0px', top: '0px'})
       TweenMax.to(mtnGround, 2.1, {left: '0px', top: '0px'})
       TweenMax.to(mtnMtn, 2.0, {left: '0px', top: '0px'})
       TweenMax.to(mtnClouds, 1.3, {left: '0px', top: '0px'})
+
 
 
     }
