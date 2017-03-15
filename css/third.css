@@ -212,9 +212,7 @@ time, mark, audio, video {
 	width: 100%;
 }
 
-.imageCenterer #fsinter{
 
-}
 
 
 
@@ -514,6 +512,54 @@ time, mark, audio, video {
 	color: white;
 	font-family: 'Titillium Web', sans-serif;
 }
+
+.interestText {
+	position: absolute;
+	top: 75%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slidesCenterer {
+	width: 100%;
+	position: absolute;
+}
+
+.slidesCenterer img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/*.popUpCopy .row:nth-of-type(4) img{*/
+
+.slideContainer .slide:nth-of-type(1) .imageContainer .slidesCenterer {
+	bottom: -300px;
+}
+.slideContainer .slide:nth-of-type(1) .imageContainer .slidesCenterer h1{
+	top: 50%;
+	color: white;
+}
+
+.slideContainer .slide:nth-of-type(2) .imageContainer .slidesCenterer {
+	bottom: -200px;
+}
+.slideContainer .slide:nth-of-type(2) .imageContainer .slidesCenterer h1{
+	top: 60%;
+	color: white;
+}
+
+.slideContainer .slide:nth-of-type(3) .imageContainer .slidesCenterer {
+	bottom: 0px;
+}
+.slideContainer .slide:nth-of-type(3) .imageContainer .slidesCenterer h1{
+	top: 75%;
+	color: white;
+}
+
+
 
 
 /*//////////HERE ARE MY LINKS//////////*/

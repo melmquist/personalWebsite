@@ -175,8 +175,8 @@ $( document ).ready(function() {
 
   })
 
-  // console.log("width: ", width);
-  // console.log("SC HEIGHT", height);
+  console.log("width: ", width);
+  console.log("SC HEIGHT", height);
 
   var slides = $(".slide");
   var currentSlide = 0;
