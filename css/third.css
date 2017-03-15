@@ -659,8 +659,32 @@ padding: 20px;*/
   max-height: 100vh;
 }
 
+.popUpLinksCopy {
+	visibility: hidden;
+	position: absolute;
+	z-index: 70;
+	background-color: rgba(255, 255, 255, 0.5);
+	top: 15%;
+	padding: 30px;
+	left: 20%;
+	right: 20%;
+	text-align: center;
 
+}
 
+.popUpLinksCopy #oppsCopy{
+	color: black;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 3.5em;
+	padding-bottom: 30px;
+	line-height: 0.9em;
+}
+
+.popUpLinksCopy #interestCopy{
+	color: black;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 2em;
+}
 
 
 

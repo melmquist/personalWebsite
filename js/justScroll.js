@@ -111,15 +111,13 @@ $( document ).ready(function() {
       TweenMax.to(puterPng, 1.6, {left: '120px', top: '8px'})
       TweenMax.to(treePng, 1.3, {left: '15px'})
 
-      //DOPE SAUCE
-      // CHANGE COLOR ITS TOO HARD TO LOOK AT FUCK...
       setTimeout(() =>{
         dopeSauce.css("visibility", "visible")
         dopeSauce.addClass("animated bounceIn");
 
         dopeSauceCursor.css("visibility", "visible")
         dopeSauceCursor.addClass("animated flash infinite");
-      }, 3000);
+      }, 2250);
 
     }
 
@@ -160,9 +158,6 @@ $( document ).ready(function() {
     }
 
 
-
-
-
     //myLinks
     if (pos > myLinksStart + 200){
       console.log("myLinks");
@@ -172,6 +167,13 @@ $( document ).ready(function() {
       TweenMax.to(mtnGround, 2.1, {left: '0px', top: '0px'})
       TweenMax.to(mtnMtn, 2.0, {left: '0px', top: '0px'})
       TweenMax.to(mtnClouds, 1.3, {left: '0px', top: '0px'})
+
+      var popUpLinksCopy = $('.popUpLinksCopy');
+
+      setTimeout(() =>{
+        popUpLinksCopy.css("visibility", "visible")
+        popUpLinksCopy.addClass('animated flipInX')
+      }, 2000);
 
 
 
