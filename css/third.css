@@ -433,7 +433,7 @@ time, mark, audio, video {
 .videoText {
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif, italic;
-	font-size: 1.3em;
+	font-size: 2em;
 	color: #cccccc;
 }
 
@@ -444,11 +444,12 @@ time, mark, audio, video {
   padding: 15px;
 	border-radius: 10px;
 	z-index: 100;
+	text-align: center;
 }
 
 .wejayVid p {
-	/*display: inline;*/
-	background-color: red
+	font-family: 'Josefin Sans', sans-serif, italic;
+	color: #cccccc;
 }
 .wejayVid iframe {
 	/*display: inline;*/
@@ -456,14 +457,15 @@ time, mark, audio, video {
 
 
 .techTalkVid {
-	/*background-color: rgba(0, 0, 0, 0.2);*/
 	background-color: rgba(0, 0, 0, 0.3);
   padding: 15px;
 	border-radius: 10px;
+	text-align: center;
 }
 
 .techTalkVid p {
-	/*display: inline;*/
+	font-family: 'Josefin Sans', sans-serif, italic;
+	color: #cccccc;
 }
 .techTalkVid iframe {
 	/*display: inline;*/
