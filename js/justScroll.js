@@ -1,12 +1,3 @@
-//animate.css pop up around divs containing links and all text/images
-//for each page.  Have them fade in on arrival into section
-
-//Last minute pull back of hidden shade to simulate on scroll snap hold
-//soccer passes you wanted to do
-
-//HANDWRITING POSTCARD AS LAST ANIMATION SCENE PICTURESQUE
-
-
 $( document ).ready(function() {
 
 
@@ -38,9 +29,7 @@ $( document ).ready(function() {
   var myLinksStart = height * 4.1
 
 
-
-  //start LAST MTN ANIMATION them all off  screen
-
+  //start mountain all off screen
   var mtnWaterFront = $('#mtnWaterFront');
   var mtnGround = $('#mtnGround');
   var mtnMtn = $('#mtnMtn');
@@ -58,22 +47,20 @@ $( document ).ready(function() {
   linksDiv.css('top', height + "px");
 
 
-
   $(window).scroll(function() {
 
     var pos = $(this).scrollTop();
     var changeRate = Math.ceil(pos/5)
 
-    console.log("position: ", pos);
+    // console.log("position: ", pos);
     // console.log("changeRate: ", changeRate);
 
     var backImage = $('.imageCenterer.first');
     backImage.css('top', -changeRate + 'px')
 
-
     //WELCOME
     if (pos < interOneStart){
-      console.log("WELCOME");
+      // console.log("WELCOME");
     }
 
     //interOne
@@ -83,8 +70,7 @@ $( document ).ready(function() {
 
     //whatAmI
     if (pos > whatAmIStart && pos < whatAmIEnd){
-      console.log("whatAmI");
-
+      // console.log("whatAmI");
 
       var whatAmIPosDif = pos - whatAmIStart;
 
@@ -123,13 +109,13 @@ $( document ).ready(function() {
 
     //interTwo
     if (pos > interTwoStart && pos < interTwoEnd){
-      console.log("interTwo");
+      // console.log("interTwo");
     }
 
 
     //myWork
     if (pos > myWorkStart && pos < myWorkEnd){
-      console.log("myWork");
+      // console.log("myWork");
 
       // $(".myWorkParent").sticky({topSpacing:0});
 
@@ -137,30 +123,16 @@ $( document ).ready(function() {
       var soccerAnimation = $('.soccerAnimation');
       // soccerAnimation.css('transform', moveOver);
 
-
     }
-    //TODO RE-IMPLEMENT THIS STICKY?????
-    // else {
-    //   $(".myWorkParent").unstick()
-    // }
-
-
-
-//YO TBHESE ACTUALLY DOPE
-//https://www.sitepoint.com/scroll-based-animations-jquery-css3/
-
-
-
 
     //interThree
     if (pos > interThreeStart && pos < interThreeEnd){
-      console.log("interThree");
+      // console.log("interThree");
     }
-
 
     //myLinks
     if (pos > myLinksStart + 200){
-      console.log("myLinks");
+      // console.log("myLinks");
 
       TweenMax.to(linksDiv, 1.6, {top: '450px'})
       TweenMax.to(mtnWaterFront, 1.6, {left: '0px', top: '0px'})
@@ -175,14 +147,12 @@ $( document ).ready(function() {
         popUpLinksCopy.addClass('animated flipInX')
       }, 2000);
 
-
-
     }
 
   })
 
-  console.log("width: ", width);
-  console.log("SC HEIGHT", height);
+  // console.log("width: ", width);
+  // console.log("SC HEIGHT", height);
 
   var slides = $(".slide");
   var currentSlide = 0;
