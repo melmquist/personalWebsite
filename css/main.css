@@ -49,8 +49,6 @@ time, mark, audio, video {
 
 
 
-
-
 .myLinks{
   background-color: #2965AC;
   height: 100vh;
@@ -354,43 +352,43 @@ time, mark, audio, video {
 .myWork .mainSlideCopy {
 
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 80px;
+	font-size: 5em;
 	line-height: 1em;
 
 }
 
 .soccerAnimation{
-	top: -160px;
-	left: -150px;
+	top: 10px;
+	left: -60px;
 	position: absolute;
 }
 
 #fieldOne{
 	position: absolute;
 	z-index: 10;
-	height: 990px;
-	width: 990px;
+	height: 600px;
+	width: 600px;
 }
 
 #fieldTwo{
 	position: absolute;
 	z-index: 20;
-	height: 990px;
-	width: 990px;
+	height: 600px;
+	width: 600px;
 }
 
 #fieldThree{
 	position: absolute;
 	z-index: 30;
-	height: 990px;
-	width: 990px;
+	height: 600px;
+	width: 600px;
 }
 
 #fieldFour{
 	position: absolute;
 	z-index: 40;
-	height: 990px;
-	width: 990px;
+	height: 600px;
+	width: 600px;
 }
 
 .wejayLink {
@@ -410,7 +408,7 @@ time, mark, audio, video {
 	color: #cccccc;
 	text-align: center;
 	padding-bottom: 10px;
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 .wejayLinkLinks {
@@ -419,12 +417,12 @@ time, mark, audio, video {
 }
 
 .herokuLogo {
-	width: 50px;
+	width: 40px;
 	display: block;
 	margin: 0 auto;
 }
 .githubLogo {
-	width: 100px;
+	width: 75px;
 	display: block;
 	margin: 0 auto;
 }
@@ -585,10 +583,10 @@ padding: 20px;*/
 .linksDiv {
 	position: absolute;
 	z-index: 70;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 0.4);
 	padding: 15px;
-	left: 10%;
-	right: 10%;
+	left: 18%;
+	right: 17%;
 	text-align: center;
 }
 
@@ -612,10 +610,10 @@ padding: 20px;*/
 	height: 140px;
 	margin: 10px;
 }
-.linksDiv img:nth-of-type(5) {
+/*.linksDiv img:nth-of-type(5) {
 	height: 125px;
 	margin: 20px;
-}
+}*/
 
 
 
@@ -666,7 +664,7 @@ padding: 20px;*/
 	position: absolute;
 	z-index: 70;
 	background-color: rgba(255, 255, 255, 0.5);
-	top: 15%;
+	top: 7%;
 	padding: 30px;
 	left: 20%;
 	right: 20%;
@@ -682,7 +680,7 @@ padding: 20px;*/
 	line-height: 0.9em;
 }
 
-.popUpLinksCopy #interestCopy{
+.popUpLinksCopy .interestCopy{
 	color: black;
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 2em;
