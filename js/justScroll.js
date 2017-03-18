@@ -1,7 +1,5 @@
 $( document ).ready(function() {
 
-
-
   var height = $(window).height()
   var width = $(window).width();
 
@@ -52,7 +50,7 @@ $( document ).ready(function() {
     var pos = $(this).scrollTop();
     var changeRate = Math.ceil(pos/5)
 
-    // console.log("position: ", pos);
+    console.log("position: ", pos);
     // console.log("changeRate: ", changeRate);
 
     var backImage = $('.imageCenterer.first');
@@ -60,17 +58,12 @@ $( document ).ready(function() {
 
     //WELCOME
     if (pos < interOneStart){
-      // console.log("WELCOME");
+      console.log("WELCOME");
     }
 
-    //interOne
-    if (pos > interOneStart && pos < interOneEnd){
-      // console.log("interOne");
-    }
-
-    //whatAmI
-    if (pos > whatAmIStart && pos < whatAmIEnd){
-      // console.log("whatAmI");
+    //interOne/whatAmI
+    if (pos > interOneStart && pos < whatAmIEnd){
+      console.log("whatAmI");
 
       var whatAmIPosDif = pos - whatAmIStart;
 
@@ -107,17 +100,9 @@ $( document ).ready(function() {
 
     }
 
-    //interTwo
-    if (pos > interTwoStart && pos < interTwoEnd){
-      // console.log("interTwo");
-    }
-
-
-    //myWork
-    if (pos > myWorkStart && pos < myWorkEnd){
-      // console.log("myWork");
-
-      // $(".myWorkParent").sticky({topSpacing:0});
+    //interTwo/Mywork
+    if (pos > interTwoStart && pos < myWorkEnd){
+      console.log("myWork");
 
       var moveOver = "translateX(" + pos/10 + "px)"
       var soccerAnimation = $('.soccerAnimation');
@@ -127,12 +112,12 @@ $( document ).ready(function() {
 
     //interThree
     if (pos > interThreeStart && pos < interThreeEnd){
-      // console.log("interThree");
+      console.log("interThree");
     }
 
     //myLinks
     if (pos > myLinksStart + 200){
-      // console.log("myLinks");
+      console.log("myLinks");
 
       TweenMax.to(linksDiv, 1.6, {top: '450px'})
       TweenMax.to(mtnWaterFront, 1.6, {left: '0px', top: '0px'})
