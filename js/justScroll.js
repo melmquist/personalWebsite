@@ -122,7 +122,7 @@ $( document ).ready(function() {
     }
 
     //myLinks
-    if (pos > myLinksStart + 200){
+    if (pos > myLinksStart - 150){
       // console.log("myLinks");
 
       TweenMax.to(linksDiv, 1.6, {top: '450px'})
