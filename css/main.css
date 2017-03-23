@@ -22,7 +22,10 @@ time, mark, audio, video {
 
 
 .welcome{
-  background-color: #6DD3CE;
+  /*background-color: #6DD3CE;*/
+	background-image: url("../images/clouds.jpg");
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: cover;
   height: 100vh;
 }
 
@@ -61,14 +64,14 @@ time, mark, audio, video {
 
 .titleDiv{
   position: relative;
-  width: 80vw;
-  margin: 0 auto;
-  top: 30vh
+  margin: auto;
+  top: 35vh;
+	line-height: 10em;
 }
 
 .titleText{
   font-family: 'Permanent Marker', cursive;
-  font-size: 3em;
+  font-size: 7em;
   text-align: center;
   vertical-align: middle;
 
@@ -110,16 +113,16 @@ time, mark, audio, video {
 
 .instructScrollDiv{
   position: relative;
-  width: 80vw;
-  margin: 0 auto;
+  /*width: 80vw;*/
+  margin: auto;
   top: 40vh
 }
 
 .instructScrollText{
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   text-align: center;
-  font-size: 2em;
-  color: white;
+  font-size: 4em;
+  color: black;
 
   -webkit-animation-duration: 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation-duration: 2s; /* Firefox < 16 */
@@ -183,7 +186,7 @@ time, mark, audio, video {
 
 .interTextBig h1 {
 	color: white;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 
@@ -343,7 +346,7 @@ time, mark, audio, video {
 }
 
 .secondSlideCopy{
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 20px;
 	text-align: center;
 }
@@ -513,7 +516,7 @@ time, mark, audio, video {
 
 .interTextBigPassion h1 {
 	color: white;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .interestText {
@@ -685,7 +688,7 @@ padding: 20px;*/
 
 .popUpLinksCopy .interestCopy{
 	color: black;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 2em;
 }
 

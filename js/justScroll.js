@@ -1,9 +1,3 @@
-/*
-soccer image too big, make it and textDivs scale down with smaller size screen
-
-
-*/
-
 $( document ).ready(function() {
 
   var height = $(window).height()
