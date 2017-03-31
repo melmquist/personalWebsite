@@ -154,7 +154,7 @@ time, mark, audio, video {
 .interTextBig {
 	position: absolute;
 	z-index: 10;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.7);
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -190,8 +190,14 @@ time, mark, audio, video {
 }
 
 
-
 .imageContainer {
+	width: 100%;
+	height: 50vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.imageContainer.slider{
 	width: 92%;
 	height: 40vh;
 	overflow: hidden;
