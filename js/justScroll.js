@@ -130,7 +130,7 @@ $( document ).ready(function() {
       setTimeout(() =>{
         popUpLinksCopy.css("visibility", "visible")
         popUpLinksCopy.addClass('animated flipInX')
-      }, 2000);
+      }, 250);
 
     }
 

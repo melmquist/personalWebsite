@@ -26,7 +26,7 @@ time, mark, audio, video {
 	background-image: url("../images/clouds.jpg");
 	background-color: rgba(0, 0, 0, 0.5);
 	background-size: cover;
-  height: 100vh;
+  height: 110vh;
 }
 
 .interstitial{
@@ -35,6 +35,12 @@ time, mark, audio, video {
 }
 
 
+.whatAmI {
+	background-color: #F7A278;
+	height: 125vh;
+	overflow: hidden;
+	position: relative;
+}
 
 .myWorkParent{
 	position: relative;
@@ -44,7 +50,7 @@ time, mark, audio, video {
 
 .myWork{
   background-color: #A13D63;
-  height: 100vh;
+  height: 150vh;
 	overflow: hidden;
 }
 
@@ -156,7 +162,7 @@ time, mark, audio, video {
 	z-index: 10;
 	background-color: rgba(0, 0, 0, 0.7);
 	top: 50%;
-	left: 50%;
+	/*left: 50%;*/
 	transform: translate(-50%, -50%);
 	text-align: center;
 	padding: 20px;
@@ -229,12 +235,6 @@ time, mark, audio, video {
 
 /*///////////////////whatAmI///////////////////*/
 
-.whatAmI {
-	background-color: #F7A278;
-	height: 100vh;
-	overflow: hidden;
-	position: relative;
-}
 
 .popUpCopy {
 	position: absolute;
