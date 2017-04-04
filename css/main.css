@@ -317,7 +317,7 @@ time, mark, audio, video {
   width: 104px;
 	left: 178px;
   top: 66px;*/
-	visibility: hidden;
+	/*visibility: hidden;*/
 }
 #dopeSauceCursor{
 	position: absolute;
@@ -326,7 +326,7 @@ time, mark, audio, video {
 	width: 100px;
 	left: 180px;
 	top: 69px;*/
-	visibility: hidden;
+	/*visibility: hidden;*/
 }
 
 .mainSlideCopy{
