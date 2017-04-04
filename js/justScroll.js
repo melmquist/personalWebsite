@@ -26,6 +26,19 @@ $( document ).ready(function() {
 
   var myLinksStart = height * 4.1
 
+  //set desk animation location and size
+  var deskAnimation = $('.deskAnimation');
+
+  var deskPng = $('#deskPng');
+  var chairPng = $('#chairPng');
+  var bookPng = $('#bookPng');
+  var puterPng = $('#puterPng');
+  var treePng = $('#treePng');
+
+  deskPng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
+  chairPng.css({'height': '45vh', 'width': '45vh', 'left': '100vh', 'top': '100vh'});
+
+
 
   //start mountain all off screen
   var mtnWaterFront = $('#mtnWaterFront');
@@ -45,7 +58,6 @@ $( document ).ready(function() {
   linksDiv.css('top', height + "px");
 
   var newHover = $('#newHover');
-
   newHover.hover(() => {
     console.log("poop")
   })
@@ -56,7 +68,7 @@ $( document ).ready(function() {
     var pos = $(this).scrollTop();
     var changeRate = Math.ceil(pos/5)
 
-    // console.log("position: ", pos);
+    console.log("position: ", pos);
     // console.log("changeRate: ", changeRate);
 
     var backImage = $('.imageCenterer.first');
@@ -81,17 +93,11 @@ $( document ).ready(function() {
       popUpCopy.css("visibility", "visible")
       popUpCopy.addClass('animated flipInY')
 
-      var deskPng = $('#deskPng');
-      var chairPng = $('#chairPng');
-      var bookPng = $('#bookPng');
-      var puterPng = $('#puterPng');
-      var treePng = $('#treePng');
-
       var dopeSauce = $('#dopeSauce');
       var dopeSauceCursor = $('#dopeSauceCursor');
 
-      TweenMax.to(deskPng, 1, {left: '-45px', top: '0px'})
-      TweenMax.to(chairPng, 1.5, {left: '195px', top: '175px'})
+      TweenMax.to(deskPng, 1, {left: '0vh', top: '-20vh'})
+      TweenMax.to(chairPng, 1.5, {left: '30vh', top: '0vh'})
       TweenMax.to(bookPng, 1.1, {left: '135px', top: '165px'})
       TweenMax.to(puterPng, 1.6, {left: '120px', top: '8px'})
       TweenMax.to(treePng, 1.3, {left: '15px'})

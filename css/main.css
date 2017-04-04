@@ -265,37 +265,33 @@ time, mark, audio, video {
 
 .deskAnimation{
 	position: absolute;
-	top: -180px;
+	/*top: -180px;*/
 }
 
 
 #deskPng{
 	position: absolute;
 	z-index: 0;
-	height: 480px;
+	/*height: 480px;
 	width: 480px;
 	left: 1000px;
-	top: 1000px;
+	top: 1000px;*/
 }
 
 #chairPng{
 	position: absolute;
 	z-index: 10;
-	height: 348px;
+	/*height: 348px;
 	width: 348px;
-	left: -1000px;
-	/*left: 205px;
-	top: 140px;*/
+	left: -1000px;*/
 }
 
 #bookPng{
 	position: absolute;
 	z-index: 20;
-	height: 96px;
+	/*height: 96px;
   width: 96px;
   left: 2000px;
-	top: 140px;
-  /*left: 145px;
 	top: 140px;*/
 }
 #puterPng{
