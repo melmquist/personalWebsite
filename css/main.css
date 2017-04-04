@@ -389,10 +389,33 @@ time, mark, audio, video {
 	width: 600px;
 }
 
+
+#newHover {
+	height: 250px;
+}
+
+.projectDivRight {
+	height: 220px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+.projectDivRight img {
+	max-height: 100%;
+	left: 50%;
+	margin-left: -200px;
+	position: absolute;
+}
+
 .wejayLink {
 	background-color: rgba(0, 0, 0, 0.3);
   padding: 15px;
 	border-radius: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .wejayLink #logo{
