@@ -44,6 +44,12 @@ $( document ).ready(function() {
 
   linksDiv.css('top', height + "px");
 
+  var newHover = $('#newHover');
+
+  newHover.hover(() => {
+    console.log("poop")
+  })
+
 
   $(window).scroll(function() {
 

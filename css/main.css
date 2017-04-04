@@ -77,7 +77,7 @@ time, mark, audio, video {
 
 .titleText{
   font-family: 'Permanent Marker', cursive;
-  font-size: 7em;
+  font-size: 6vw;
   text-align: center;
   vertical-align: middle;
 
@@ -127,7 +127,7 @@ time, mark, audio, video {
 .instructScrollText{
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
-  font-size: 4em;
+  font-size: 4vw;
   color: black;
 
   -webkit-animation-duration: 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -193,6 +193,7 @@ time, mark, audio, video {
 .interTextBig h1 {
 	color: white;
 	font-family: 'Josefin Sans', sans-serif;
+	font-size: 3vw;
 }
 
 
@@ -241,38 +242,30 @@ time, mark, audio, video {
 	visibility: hidden;
 	animation-delay: 1s;
 	background-color: rgba(0, 0, 0, 0.2);
-	padding: 0.15em 2em 0em;
+	/*padding: 4vh 0vh 0vh 4vh;*/
 }
 
 .popUpCopy img{
 	display: block;
   margin-left: auto;
   margin-right: auto;
+	max-width: 100%;
+  max-height: 100%;
+	vertical-align: middle;
 }
 
-.popUpCopy .row:nth-of-type(1) img{
-	height: 7em;
-	margin-top: 20px;
+#nerpLogos {
+	height: 40vh;
+	width: 40vw;
 }
 
-.popUpCopy .row:nth-of-type(2) img{
-	height: 5em;
-	margin: 17px;
-}
-.popUpCopy .row:nth-of-type(3) img{
-	height: 7em;
-	margin-top: 7px;
-}
-.popUpCopy .row:nth-of-type(4) img{
-	height: 12em;
 
-}
 
 /*///////////////////DESK ANIMATION///////////////////*/
 
 .deskAnimation{
-	position: relative;
-	top: -70px;
+	position: absolute;
+	top: -180px;
 }
 
 
@@ -308,53 +301,50 @@ time, mark, audio, video {
 #puterPng{
 	position: absolute;
 	z-index: 30;
-	height: 246px;
+	/*height: 246px;
 	width: 246px;
 	left: 140px;
-	top: -3000px;
-	/*left: 140px;
-	top: 0px;*/
+	top: -3000px;*/
 }
 #treePng{
 	position: absolute;
 	z-index: 40;
-	height: 156px;
+	/*height: 156px;
 	width: 156px;
 	left: 2000px;
-	top: 25px;
-	/*left: 50px;
 	top: 25px;*/
 }
 #dopeSauce{
 	position: absolute;
 	z-index: 50;
-	height: 104px;
+	/*height: 104px;
   width: 104px;
 	left: 178px;
-  top: 66px;
+  top: 66px;*/
 	visibility: hidden;
 }
 #dopeSauceCursor{
 	position: absolute;
 	z-index: 60;
-	height: 100px;
+	/*height: 100px;
 	width: 100px;
 	left: 180px;
-	top: 69px;
+	top: 69px;*/
 	visibility: hidden;
 }
 
 .mainSlideCopy{
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 100px;
-	margin-top: 30px;
-  line-height: 0.8em;
+	font-size: 12vh;
+	margin-top: 5vh;
+  line-height: 1em;
+	text-align: center;
 }
 
 .secondSlideCopy{
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 20px;
-	text-align: center;
+	font-size: 1.8vw;
+	/*text-align: center;*/
 }
 
 
