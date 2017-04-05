@@ -35,12 +35,12 @@ $( document ).ready(function() {
   var puterPng = $('#puterPng');
   var treePng = $('#treePng');
 
-  deskPng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
-  chairPng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
-
-  bookPng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
-  puterPng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
-  treePng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
+  // deskPng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
+  // chairPng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
+  //
+  // bookPng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
+  // puterPng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
+  // treePng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
 
 
   //start mountain all off screen
@@ -99,11 +99,11 @@ $( document ).ready(function() {
       var dopeSauce = $('#dopeSauce');
       var dopeSauceCursor = $('#dopeSauceCursor');
 
-      TweenMax.to(deskPng, 1, {left: '0vh', top: '0vh'})
-      TweenMax.to(chairPng, 1.5, {left: '0vh', top: '0vh'})
-      TweenMax.to(bookPng, 1.1, {left: '0vh', top: '0vh'})
-      TweenMax.to(puterPng, 1.6, {left: '0vh', top: '0vh'})
-      TweenMax.to(treePng, 1.3, {left: '0vh', top: '0vh'})
+      TweenMax.to(deskPng, 1, {left: '-10vh', top: '-25vh'})
+      TweenMax.to(chairPng, 1.5, {left: '-10vh', top: '-25vh'})
+      TweenMax.to(bookPng, 1.1, {left: '-10vh', top: '-25vh'})
+      TweenMax.to(puterPng, 1.6, {left: '-10vh', top: '-25vh'})
+      TweenMax.to(treePng, 1.3, {left: '-10vh', top: '-25vh'})
 
       setTimeout(() =>{
         dopeSauce.css("visibility", "visible")

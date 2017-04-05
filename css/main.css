@@ -50,7 +50,7 @@ time, mark, audio, video {
 
 .myWork{
   background-color: #A13D63;
-  height: 150vh;
+  height: 175vh;
 	overflow: hidden;
 }
 
@@ -241,7 +241,8 @@ time, mark, audio, video {
 	position: absolute;
 	visibility: hidden;
 	animation-delay: 1s;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0);
+	left: -20px;
 	/*padding: 4vh 0vh 0vh 4vh;*/
 }
 
@@ -254,10 +255,10 @@ time, mark, audio, video {
 	vertical-align: middle;
 }
 
-#nerpLogos {
-	height: 40vh;
-	width: 40vw;
-}
+/*#nerpLogos {
+	height: 400px;
+	width: 400px;
+}*/
 
 
 
@@ -272,10 +273,10 @@ time, mark, audio, video {
 #deskPng{
 	position: absolute;
 	z-index: 0;
-	/*height: 480px;
-	width: 480px;
+	height: 600px;
+	width: 600px;
 	left: 1000px;
-	top: 1000px;*/
+	top: 1000px;
 }
 
 #chairPng{
@@ -284,63 +285,83 @@ time, mark, audio, video {
 	/*height: 348px;
 	width: 348px;
 	left: -1000px;*/
+	height: 600px;
+	width: 600px;
+	left: -1000px;
+
 }
 
 #bookPng{
 	position: absolute;
 	z-index: 20;
 	/*height: 96px;
-  width: 96px;
+  width: 96px;*/
   left: 2000px;
-	top: 140px;*/
+	top: 140px;
+	height: 600px;
+	width: 600px;
 }
 #puterPng{
 	position: absolute;
 	z-index: 30;
 	/*height: 246px;
-	width: 246px;
+	width: 246px;*/
+
 	left: 140px;
-	top: -3000px;*/
+	top: -3000px;
+	height: 600px;
+	width: 600px;
 }
 #treePng{
 	position: absolute;
 	z-index: 40;
 	/*height: 156px;
-	width: 156px;
+	width: 156px;*/
 	left: 2000px;
-	top: 25px;*/
+	top: 25px;
+	height: 600px;
+	width: 600px;
 }
 #dopeSauce{
 	position: absolute;
 	z-index: 50;
-	/*height: 104px;
-  width: 104px;
-	left: 178px;
-  top: 66px;*/
-	/*visibility: hidden;*/
+
+
+	left: -10vh;
+  top: -25vh;
+	height: 600px;
+	width: 600px;
+	visibility: hidden;
 }
 #dopeSauceCursor{
 	position: absolute;
 	z-index: 60;
-	/*height: 100px;
-	width: 100px;
-	left: 180px;
-	top: 69px;*/
-	/*visibility: hidden;*/
+	left: -10vh;
+  top: -25vh;
+	height: 600px;
+	width: 600px;
+	visibility: hidden;
 }
 
 .mainSlideCopy{
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 12vh;
-	margin-top: 5vh;
+	/*font-size: 12vh;
+	margin-top: 5vh;*/
   line-height: 1em;
 	text-align: center;
+
+	font-size: 100px;
+	margin-top: 30px;
+  line-height: 0.8em;
+	margin-top: 50px;
 }
 
 .secondSlideCopy{
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 1.8vw;
+	/*font-size: 1.8vw;*/
 	/*text-align: center;*/
+	font-size: 24px;
+
 }
 
 
