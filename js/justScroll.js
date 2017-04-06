@@ -1,3 +1,8 @@
+if (window.matchMedia('(max-width: 768px)').matches) {
+    // do functionality on screens smaller than 768px
+    console.log("IM A SMALL SCREEN");
+}
+
 $( document ).ready(function() {
 
   var height = $(window).height()
@@ -59,18 +64,17 @@ $( document ).ready(function() {
 
   linksDiv.css('top', height + "px");
 
-  var newHover = $('#newHover');
-  newHover.hover(() => {
-    console.log("poop")
-  })
-
+  // var newHover = $('#newHover');
+  // newHover.hover(() => {
+  //   console.log("new Hover Hit")
+  // })
 
   $(window).scroll(function() {
 
     var pos = $(this).scrollTop();
     var changeRate = Math.ceil(pos/5)
 
-    console.log("position: ", pos);
+    // console.log("position: ", pos);
     // console.log("changeRate: ", changeRate);
 
     var backImage = $('.imageCenterer.first');
@@ -116,7 +120,7 @@ $( document ).ready(function() {
 
     //interTwo/Mywork
     if (pos > 2100){
-      console.log("myWork");
+      // console.log("myWork");
 
       TweenMax.to(fieldOne, 1, {left: '0px'})
       TweenMax.to(fieldTwo, 1.7, {left: '0px'})
@@ -133,7 +137,7 @@ $( document ).ready(function() {
 
     //myLinks
     if (pos > myLinksStart){
-      console.log("myLinks");
+      // console.log("myLinks");
 
       TweenMax.to(linksDiv, 1.6, {top: '450px'})
       TweenMax.to(mtnWaterFront, 1.6, {left: '0px', top: '0px'})

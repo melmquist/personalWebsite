@@ -20,6 +20,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+.mobile {
+	height: 100vh;
+	background-color: white;
+}
 
 .welcome{
   /*background-color: #6DD3CE;*/
