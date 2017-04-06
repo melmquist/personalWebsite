@@ -378,37 +378,42 @@ time, mark, audio, video {
 
 .soccerAnimation{
 	top: 10px;
-	left: -60px;
+	left: -30px;
 	position: absolute;
 }
 
 #fieldOne{
 	position: absolute;
 	z-index: 10;
-	height: 600px;
-	width: 600px;
+	/*height: 600px;
+	width: 600px;*/
+	left: 1000px;
 }
 
 #fieldTwo{
 	position: absolute;
 	z-index: 20;
-	height: 600px;
-	width: 600px;
+	/*height: 600px;
+	width: 600px;*/
+	left: 1000px;
+
 }
 
 #fieldThree{
 	position: absolute;
 	z-index: 30;
-	height: 600px;
-	width: 600px;
+	/*height: 600px;
+	width: 600px;*/
+	left: 1000px;
+	top: 1000px;
 }
 
-#fieldFour{
+/*#fieldFour{
 	position: absolute;
 	z-index: 40;
 	height: 600px;
 	width: 600px;
-}
+}*/
 
 
 #newHover {
@@ -487,6 +492,7 @@ time, mark, audio, video {
 	font-family: 'Josefin Sans', sans-serif, italic;
 	font-size: 2em;
 	color: #cccccc;
+	margin-top: 30px;
 }
 
 

@@ -36,6 +36,12 @@ $( document ).ready(function() {
   var treePng = $('#treePng');
 
 
+  //soccerAnimation
+  var fieldOne = $('#fieldOne')
+  var fieldTwo = $('#fieldTwo')
+  var fieldThree = $('#fieldThree')
+
+
   //start mountain all off screen
   var mtnWaterFront = $('#mtnWaterFront');
   var mtnGround = $('#mtnGround');
@@ -109,12 +115,14 @@ $( document ).ready(function() {
     }
 
     //interTwo/Mywork
-    if (pos > interTwoStart && pos < myWorkEnd){
-      // console.log("myWork");
+    if (pos > 2100){
+      console.log("myWork");
 
-      var moveOver = "translateX(" + pos/10 + "px)"
-      var soccerAnimation = $('.soccerAnimation');
-      // soccerAnimation.css('transform', moveOver);
+      TweenMax.to(fieldOne, 1, {left: '0px'})
+      TweenMax.to(fieldTwo, 1.7, {left: '0px'})
+      TweenMax.to(fieldThree, 2.1, {left: '0px', top: '0px'})
+
+
 
     }
 
@@ -124,7 +132,7 @@ $( document ).ready(function() {
     }
 
     //myLinks
-    if (pos > myLinksStart - 150){
+    if (pos > myLinksStart){
       // console.log("myLinks");
 
       TweenMax.to(linksDiv, 1.6, {top: '450px'})
