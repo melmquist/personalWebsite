@@ -415,6 +415,18 @@ time, mark, audio, video {
 	height: 250px;
 }
 
+.projectDivLeft p{
+	font-family: 'Josefin Sans', sans-serif, italic;
+	font-size: 15px;
+	color: #cccccc;
+}
+
+.projectDivLeft h3{
+	/*font-family: 'Josefin Sans', sans-serif, italic;*/
+	color: #cccccc;
+}
+
+
 .projectDivRight {
 	height: 220px;
 	margin: 0 auto;
@@ -489,6 +501,7 @@ time, mark, audio, video {
 
 .wejayVid p {
 	font-family: 'Josefin Sans', sans-serif, italic;
+	font-size: 20px;
 	color: #cccccc;
 }
 .wejayVid iframe {
@@ -505,6 +518,7 @@ time, mark, audio, video {
 
 .techTalkVid p {
 	font-family: 'Josefin Sans', sans-serif, italic;
+	font-size: 20px;
 	color: #cccccc;
 }
 .techTalkVid iframe {
@@ -625,7 +639,7 @@ padding: 20px;*/
 .linksDiv {
 	position: absolute;
 	z-index: 70;
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.0);
 	padding: 15px;
 	left: 18%;
 	right: 17%;
@@ -705,7 +719,7 @@ padding: 20px;*/
 	visibility: hidden;
 	position: absolute;
 	z-index: 70;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.8);
 	top: 7%;
 	padding: 30px;
 	left: 20%;

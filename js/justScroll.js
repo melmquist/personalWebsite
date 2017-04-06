@@ -35,13 +35,6 @@ $( document ).ready(function() {
   var puterPng = $('#puterPng');
   var treePng = $('#treePng');
 
-  // deskPng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
-  // chairPng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
-  //
-  // bookPng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
-  // puterPng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
-  // treePng.css({'height': '60vh', 'width': '60vh', 'left': '100vh', 'top': '100vh'});
-
 
   //start mountain all off screen
   var mtnWaterFront = $('#mtnWaterFront');
@@ -99,11 +92,11 @@ $( document ).ready(function() {
       var dopeSauce = $('#dopeSauce');
       var dopeSauceCursor = $('#dopeSauceCursor');
 
-      TweenMax.to(deskPng, 1, {left: '-10vh', top: '-25vh'})
-      TweenMax.to(chairPng, 1.5, {left: '-10vh', top: '-25vh'})
-      TweenMax.to(bookPng, 1.1, {left: '-10vh', top: '-25vh'})
-      TweenMax.to(puterPng, 1.6, {left: '-10vh', top: '-25vh'})
-      TweenMax.to(treePng, 1.3, {left: '-10vh', top: '-25vh'})
+      TweenMax.to(deskPng, 1.1, {left: '-10vh', top: '-25vh'})
+      TweenMax.to(chairPng, 1.6, {left: '-10vh', top: '-25vh'})
+      TweenMax.to(bookPng, 1.2, {left: '-10vh', top: '-25vh'})
+      TweenMax.to(puterPng, 1.7, {left: '-10vh', top: '-25vh'})
+      TweenMax.to(treePng, 1.4, {left: '-10vh', top: '-25vh'})
 
       setTimeout(() =>{
         dopeSauce.css("visibility", "visible")
