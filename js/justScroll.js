@@ -5,8 +5,14 @@ $( document ).ready(function() {
     // console.log("IM A SMALL SCREEN");
 
     $('html, body').css({
-      overflow: 'hidden',
-      height: '100%'
+      'overflow': 'hidden',
+      'height': '100%',
+      'background': '#3a58ff',
+      'background': '-webkit-linear-gradient(#a8ffff, #3a58ff)',
+      'background': '-o-linear-gradient(#a8ffff, #3a58ff)',
+      'background': '-moz-linear-gradient(#a8ffff, #3a58ff)',
+      'background': 'linear-gradient(#a8ffff, #3a58ff)',
+      'background-size': 'cover'
     });
 
     var mobileh1 = $('<h1>Please Visit This Portfolio Website On a Desktop</h1>');
@@ -20,14 +26,6 @@ $( document ).ready(function() {
     	'text-align': 'center',
     	'margin': '10px'
     });
-
-    $('#grad').css({
-      'background': '#3a58ff',
-      'background': '-webkit-linear-gradient(#a8ffff, #3a58ff)',
-      'background': '-o-linear-gradient(#a8ffff, #3a58ff)',
-      'background': '-moz-linear-gradient(#a8ffff, #3a58ff)',
-      'background': 'linear-gradient(#a8ffff, #3a58ff)'
-    })
 
 
 
