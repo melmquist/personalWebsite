@@ -133,7 +133,7 @@ $( document ).ready(function() {
 
     //myLinks
     if (pos > myLinksStart){
-      // console.log("myLinks");
+      console.log("myLinks");
 
       TweenMax.to(linksDiv, 1.6, {top: '450px'})
       TweenMax.to(mtnWaterFront, 1.6, {left: '0px', top: '0px'})
@@ -146,7 +146,7 @@ $( document ).ready(function() {
       setTimeout(() =>{
         popUpLinksCopy.css("visibility", "visible")
         popUpLinksCopy.addClass('animated flipInX')
-      }, 250);
+      }, 1);
 
     }
 
