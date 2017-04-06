@@ -1,9 +1,3 @@
-/*
-soccer image too big, make it and textDivs scale down with smaller size screen
-
-
-*/
-
 $( document ).ready(function() {
 
   var height = $(window).height()
@@ -32,6 +26,21 @@ $( document ).ready(function() {
 
   var myLinksStart = height * 4.1
 
+  //set desk animation location and size
+  var deskAnimation = $('.deskAnimation');
+
+  var deskPng = $('#deskPng');
+  var chairPng = $('#chairPng');
+  var bookPng = $('#bookPng');
+  var puterPng = $('#puterPng');
+  var treePng = $('#treePng');
+
+
+  //soccerAnimation
+  var fieldOne = $('#fieldOne')
+  var fieldTwo = $('#fieldTwo')
+  var fieldThree = $('#fieldThree')
+
 
   //start mountain all off screen
   var mtnWaterFront = $('#mtnWaterFront');
@@ -50,13 +59,18 @@ $( document ).ready(function() {
 
   linksDiv.css('top', height + "px");
 
+  var newHover = $('#newHover');
+  newHover.hover(() => {
+    console.log("poop")
+  })
+
 
   $(window).scroll(function() {
 
     var pos = $(this).scrollTop();
     var changeRate = Math.ceil(pos/5)
 
-    // console.log("position: ", pos);
+    console.log("position: ", pos);
     // console.log("changeRate: ", changeRate);
 
     var backImage = $('.imageCenterer.first');
@@ -81,20 +95,14 @@ $( document ).ready(function() {
       popUpCopy.css("visibility", "visible")
       popUpCopy.addClass('animated flipInY')
 
-      var deskPng = $('#deskPng');
-      var chairPng = $('#chairPng');
-      var bookPng = $('#bookPng');
-      var puterPng = $('#puterPng');
-      var treePng = $('#treePng');
-
       var dopeSauce = $('#dopeSauce');
       var dopeSauceCursor = $('#dopeSauceCursor');
 
-      TweenMax.to(deskPng, 1, {left: '-45px', top: '0px'})
-      TweenMax.to(chairPng, 1.5, {left: '195px', top: '175px'})
-      TweenMax.to(bookPng, 1.1, {left: '135px', top: '165px'})
-      TweenMax.to(puterPng, 1.6, {left: '120px', top: '8px'})
-      TweenMax.to(treePng, 1.3, {left: '15px'})
+      TweenMax.to(deskPng, 1.1, {left: '-10vh', top: '-25vh'})
+      TweenMax.to(chairPng, 1.6, {left: '-10vh', top: '-25vh'})
+      TweenMax.to(bookPng, 1.2, {left: '-10vh', top: '-25vh'})
+      TweenMax.to(puterPng, 1.7, {left: '-10vh', top: '-25vh'})
+      TweenMax.to(treePng, 1.4, {left: '-10vh', top: '-25vh'})
 
       setTimeout(() =>{
         dopeSauce.css("visibility", "visible")
@@ -107,12 +115,14 @@ $( document ).ready(function() {
     }
 
     //interTwo/Mywork
-    if (pos > interTwoStart && pos < myWorkEnd){
-      // console.log("myWork");
+    if (pos > 2100){
+      console.log("myWork");
 
-      var moveOver = "translateX(" + pos/10 + "px)"
-      var soccerAnimation = $('.soccerAnimation');
-      // soccerAnimation.css('transform', moveOver);
+      TweenMax.to(fieldOne, 1, {left: '0px'})
+      TweenMax.to(fieldTwo, 1.7, {left: '0px'})
+      TweenMax.to(fieldThree, 2.1, {left: '0px', top: '0px'})
+
+
 
     }
 
@@ -122,7 +132,7 @@ $( document ).ready(function() {
     }
 
     //myLinks
-    if (pos > myLinksStart - 150){
+    if (pos > myLinksStart){
       // console.log("myLinks");
 
       TweenMax.to(linksDiv, 1.6, {top: '450px'})

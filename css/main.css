@@ -22,8 +22,11 @@ time, mark, audio, video {
 
 
 .welcome{
-  background-color: #6DD3CE;
-  height: 100vh;
+  /*background-color: #6DD3CE;*/
+	background-image: url("../images/clouds.jpg");
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: cover;
+  height: 110vh;
 }
 
 .interstitial{
@@ -32,6 +35,12 @@ time, mark, audio, video {
 }
 
 
+.whatAmI {
+	background-color: #F7A278;
+	height: 125vh;
+	overflow: hidden;
+	position: relative;
+}
 
 .myWorkParent{
 	position: relative;
@@ -41,7 +50,7 @@ time, mark, audio, video {
 
 .myWork{
   background-color: #A13D63;
-  height: 100vh;
+  height: 175vh;
 	overflow: hidden;
 }
 
@@ -61,14 +70,18 @@ time, mark, audio, video {
 
 .titleDiv{
   position: relative;
-  width: 80vw;
-  margin: 0 auto;
-  top: 30vh
+  margin: auto;
+  top: 35vh;
+	line-height: 10em;
 }
 
 .titleText{
   font-family: 'Permanent Marker', cursive;
+<<<<<<< HEAD
+  font-size: 6vw;
+=======
   font-size: 4em;
+>>>>>>> master
   text-align: center;
   vertical-align: middle;
 
@@ -110,16 +123,16 @@ time, mark, audio, video {
 
 .instructScrollDiv{
   position: relative;
-  width: 80vw;
-  margin: 0 auto;
+  /*width: 80vw;*/
+  margin: auto;
   top: 40vh
 }
 
 .instructScrollText{
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   text-align: center;
-  font-size: 2em;
-  color: white;
+  font-size: 4vw;
+  color: black;
 
   -webkit-animation-duration: 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation-duration: 2s; /* Firefox < 16 */
@@ -151,9 +164,9 @@ time, mark, audio, video {
 .interTextBig {
 	position: absolute;
 	z-index: 10;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.7);
 	top: 50%;
-	left: 50%;
+	/*left: 50%;*/
 	transform: translate(-50%, -50%);
 	text-align: center;
 	padding: 20px;
@@ -183,16 +196,26 @@ time, mark, audio, video {
 
 .interTextBig h1 {
 	color: white;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 3vw;
 }
 
 
-
 .imageContainer {
-  width: 100%;
-  height: 50vh;
-  overflow: hidden;
-  position: relative;
+	width: 100%;
+	height: 50vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.imageContainer.slider{
+	width: 92%;
+	height: 40vh;
+	overflow: hidden;
+	position: relative;
+	top: 5vh;
+	border-radius: 68px;
+	margin: auto;
 }
 
 .imageCenterer {
@@ -217,58 +240,45 @@ time, mark, audio, video {
 
 /*///////////////////whatAmI///////////////////*/
 
-.whatAmI {
-	background-color: #F7A278;
-	height: 100vh;
-	overflow: hidden;
-	position: relative;
-}
 
 .popUpCopy {
 	position: absolute;
 	visibility: hidden;
 	animation-delay: 1s;
-	background-color: rgba(0, 0, 0, 0.2);
-	padding: 0.15em 2em 0em;
+	background-color: rgba(0, 0, 0, 0);
+	left: -20px;
+	/*padding: 4vh 0vh 0vh 4vh;*/
 }
 
 .popUpCopy img{
 	display: block;
   margin-left: auto;
   margin-right: auto;
+	max-width: 100%;
+  max-height: 100%;
+	vertical-align: middle;
 }
 
-.popUpCopy .row:nth-of-type(1) img{
-	height: 7em;
-	margin-top: 20px;
-}
+/*#nerpLogos {
+	height: 400px;
+	width: 400px;
+}*/
 
-.popUpCopy .row:nth-of-type(2) img{
-	height: 5em;
-	margin: 17px;
-}
-.popUpCopy .row:nth-of-type(3) img{
-	height: 7em;
-	margin-top: 7px;
-}
-.popUpCopy .row:nth-of-type(4) img{
-	height: 12em;
 
-}
 
 /*///////////////////DESK ANIMATION///////////////////*/
 
 .deskAnimation{
-	position: relative;
-	top: -70px;
+	position: absolute;
+	/*top: -180px;*/
 }
 
 
 #deskPng{
 	position: absolute;
 	z-index: 0;
-	height: 480px;
-	width: 480px;
+	height: 600px;
+	width: 600px;
 	left: 1000px;
 	top: 1000px;
 }
@@ -276,73 +286,86 @@ time, mark, audio, video {
 #chairPng{
 	position: absolute;
 	z-index: 10;
-	height: 348px;
+	/*height: 348px;
 	width: 348px;
+	left: -1000px;*/
+	height: 600px;
+	width: 600px;
 	left: -1000px;
-	/*left: 205px;
-	top: 140px;*/
+
 }
 
 #bookPng{
 	position: absolute;
 	z-index: 20;
-	height: 96px;
-  width: 96px;
+	/*height: 96px;
+  width: 96px;*/
   left: 2000px;
 	top: 140px;
-  /*left: 145px;
-	top: 140px;*/
+	height: 600px;
+	width: 600px;
 }
 #puterPng{
 	position: absolute;
 	z-index: 30;
-	height: 246px;
-	width: 246px;
+	/*height: 246px;
+	width: 246px;*/
+
 	left: 140px;
 	top: -3000px;
-	/*left: 140px;
-	top: 0px;*/
+	height: 600px;
+	width: 600px;
 }
 #treePng{
 	position: absolute;
 	z-index: 40;
-	height: 156px;
-	width: 156px;
+	/*height: 156px;
+	width: 156px;*/
 	left: 2000px;
 	top: 25px;
-	/*left: 50px;
-	top: 25px;*/
+	height: 600px;
+	width: 600px;
 }
 #dopeSauce{
 	position: absolute;
 	z-index: 50;
-	height: 104px;
-  width: 104px;
-	left: 178px;
-  top: 66px;
+
+
+	left: -10vh;
+  top: -25vh;
+	height: 600px;
+	width: 600px;
 	visibility: hidden;
 }
 #dopeSauceCursor{
 	position: absolute;
 	z-index: 60;
-	height: 100px;
-	width: 100px;
-	left: 180px;
-	top: 69px;
+	left: -10vh;
+  top: -25vh;
+	height: 600px;
+	width: 600px;
 	visibility: hidden;
 }
 
 .mainSlideCopy{
 	font-family: 'Josefin Sans', sans-serif;
+	/*font-size: 12vh;
+	margin-top: 5vh;*/
+  line-height: 1em;
+	text-align: center;
+
 	font-size: 100px;
 	margin-top: 30px;
   line-height: 0.8em;
+	margin-top: 50px;
 }
 
 .secondSlideCopy{
-	font-family: 'Source Code Pro', monospace;
-	font-size: 20px;
-	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	/*font-size: 1.8vw;*/
+	/*text-align: center;*/
+	font-size: 24px;
+
 }
 
 
@@ -359,42 +382,82 @@ time, mark, audio, video {
 
 .soccerAnimation{
 	top: 10px;
-	left: -60px;
+	left: -30px;
 	position: absolute;
 }
 
 #fieldOne{
 	position: absolute;
 	z-index: 10;
-	height: 600px;
-	width: 600px;
+	/*height: 600px;
+	width: 600px;*/
+	left: 1000px;
 }
 
 #fieldTwo{
 	position: absolute;
 	z-index: 20;
-	height: 600px;
-	width: 600px;
+	/*height: 600px;
+	width: 600px;*/
+	left: 1000px;
+
 }
 
 #fieldThree{
 	position: absolute;
 	z-index: 30;
-	height: 600px;
-	width: 600px;
+	/*height: 600px;
+	width: 600px;*/
+	left: 1000px;
+	top: 1000px;
 }
 
-#fieldFour{
+/*#fieldFour{
 	position: absolute;
 	z-index: 40;
 	height: 600px;
 	width: 600px;
+}*/
+
+
+#newHover {
+	height: 250px;
+}
+
+.projectDivLeft p{
+	font-family: 'Josefin Sans', sans-serif, italic;
+	font-size: 15px;
+	color: #cccccc;
+}
+
+.projectDivLeft h3{
+	/*font-family: 'Josefin Sans', sans-serif, italic;*/
+	color: #cccccc;
+}
+
+
+.projectDivRight {
+	height: 220px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+.projectDivRight img {
+	max-height: 100%;
+	left: 50%;
+	margin-left: -200px;
+	position: absolute;
 }
 
 .wejayLink {
 	background-color: rgba(0, 0, 0, 0.3);
   padding: 15px;
 	border-radius: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .wejayLink #logo{
@@ -433,6 +496,7 @@ time, mark, audio, video {
 	font-family: 'Josefin Sans', sans-serif, italic;
 	font-size: 2em;
 	color: #cccccc;
+	margin-top: 30px;
 }
 
 
@@ -447,6 +511,7 @@ time, mark, audio, video {
 
 .wejayVid p {
 	font-family: 'Josefin Sans', sans-serif, italic;
+	font-size: 20px;
 	color: #cccccc;
 }
 .wejayVid iframe {
@@ -463,6 +528,7 @@ time, mark, audio, video {
 
 .techTalkVid p {
 	font-family: 'Josefin Sans', sans-serif, italic;
+	font-size: 20px;
 	color: #cccccc;
 }
 .techTalkVid iframe {
@@ -510,7 +576,7 @@ time, mark, audio, video {
 
 .interTextBigPassion h1 {
 	color: white;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .interestText {
@@ -583,7 +649,7 @@ padding: 20px;*/
 .linksDiv {
 	position: absolute;
 	z-index: 70;
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.0);
 	padding: 15px;
 	left: 18%;
 	right: 17%;
@@ -663,7 +729,7 @@ padding: 20px;*/
 	visibility: hidden;
 	position: absolute;
 	z-index: 70;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.8);
 	top: 7%;
 	padding: 30px;
 	left: 20%;
@@ -682,7 +748,7 @@ padding: 20px;*/
 
 .popUpLinksCopy .interestCopy{
 	color: black;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 2em;
 }
 
