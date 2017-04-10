@@ -167,10 +167,10 @@ $( document ).ready(function() {
 
         var popUpLinksCopy = $('.popUpLinksCopy');
 
-        setTimeout(() =>{
+        // setTimeout(() =>{
           popUpLinksCopy.css("visibility", "visible")
           popUpLinksCopy.addClass('animated flipInX')
-        }, 1);
+        // }, 1);
 
         TweenMax.to(linksDiv, 1.6, {top: '450px'})
         TweenMax.to(mtnWaterFront, 1.6, {left: '0px', top: '0px'})
@@ -185,23 +185,23 @@ $( document ).ready(function() {
     // console.log("width: ", width);
     // console.log("SC HEIGHT", height);
 
-    var slides = $(".slide");
-    var currentSlide = 0;
-
-    TweenMax.set(slides.filter(":gt(0)"), {left: "-" + width + "px"});
-    TweenMax.delayedCall(4, nextSlide);
-
-    function nextSlide(){
-      TweenMax.to(slides.eq(currentSlide), 1, {left: "-" + width + "px"})
-      if (currentSlide < slides.length - 1) {
-        currentSlide++;
-      } else {
-        currentSlide = 0;
-      }
-
-      TweenMax.fromTo(slides.eq(currentSlide), 1, {left: width + "px"}, {left: "0px"} );
-      TweenMax.delayedCall(4, nextSlide)
-    }
+    // var slides = $(".slide");
+    // var currentSlide = 0;
+    //
+    // TweenMax.set(slides.filter(":gt(0)"), {left: "-" + width + "px"});
+    // TweenMax.delayedCall(4, nextSlide);
+    //
+    // function nextSlide(){
+    //   TweenMax.to(slides.eq(currentSlide), 1, {left: "-" + width + "px"})
+    //   if (currentSlide < slides.length - 1) {
+    //     currentSlide++;
+    //   } else {
+    //     currentSlide = 0;
+    //   }
+    //
+    //   TweenMax.fromTo(slides.eq(currentSlide), 1, {left: width + "px"}, {left: "0px"} );
+    //   TweenMax.delayedCall(4, nextSlide)
+    // }
   }
 
 
