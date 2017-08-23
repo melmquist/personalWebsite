@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "personal-website",
   "version": "1.0.0",
   "description": "y",
   "main": "index.js",
@@ -10,6 +10,17 @@
   "license": "ISC",
   "dependencies": {
     "animate.css": "^3.5.2",
-    "bootstrap": "^3.3.7"
-  }
+    "bootstrap": "^3.3.7",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melmquist/personalWebsite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/melmquist/personalWebsite/issues"
+  },
+  "homepage": "https://github.com/melmquist/personalWebsite#readme"
 }
